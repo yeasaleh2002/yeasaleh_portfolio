@@ -14,7 +14,7 @@ const About = () => {
               
               {/* safety packages image*/}
                <Grid  sx={{mt: 4, mb: 3}} item xs={12} md={6} >
-                    <img  style={{ width: '100%', borderRadius: '10px'}} src="https://i.ibb.co/mBFYNTr/saleh2.png"  alt="bike" />
+                    <img  style={{ width: '100%', borderRadius: '10px'}} src="https://i.ibb.co/bgw6rXh/1613136254435-1-e.jpg"  alt="bike" />
                 </Grid>
 
                 {/* safety packages description*/}

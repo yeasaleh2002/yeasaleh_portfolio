@@ -19,7 +19,7 @@ const Projects = () => {
 
     return (
         <Container sx={{my: 8}}> 
-            <Typography sx={{my: 5, color: 'info.main', fontWeight: '400'}} variant="h4">Projects</Typography>
+            <Typography sx={{my: 5, color: 'info.main', fontWeight: 'bold'}} variant="h3">Projects</Typography>
                         
                 <Grid container spacing={2}>
                     {
