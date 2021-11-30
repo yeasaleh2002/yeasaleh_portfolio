@@ -21,7 +21,7 @@ const Home = () => {
           <Container data-aos="fade-up"  sx={{ flexGrow: 1 }}>       
             <Grid  sx={{p: 5}} container spacing={2}>
                
-               {/* Our dream description part*/}
+
                 <Grid  item  xs={12} md={6}>
                     <Box sx={{p: 2}}>
                         <Typography variant="h3" sx={{mb: 2, color: 'gray'}}>
@@ -66,23 +66,11 @@ const Home = () => {
 
          </Container>
         
-           <Box data-aos="fade-right">
-           <Services></Services>
-           </Box>
 
-           <Box data-aos="fade-up">
-           <Projects></Projects>
-           </Box>
-
-           <Box data-aos="fade-left" >
+           <Services></Services>    
+           <Projects></Projects>       
            <About></About>
-           </Box>
- 
-           <Box data-aos="zoom-out-down">
-           <Contact></Contact>
-           </Box>
-            
-         
+           <Contact></Contact>     
            
         </div>
     );

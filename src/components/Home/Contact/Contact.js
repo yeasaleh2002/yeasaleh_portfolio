@@ -1,7 +1,8 @@
 import { Button, Grid, Link, TextField } from '@mui/material';
-import React from 'react';
+import React, { useEffect } from 'react';
 import emailjs from "emailjs-com";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Contact = () => {
@@ -18,14 +19,17 @@ const Contact = () => {
         e.target.reset();
         }
         
+        useEffect(() => {
+            Aos.init({ duration: 2000 })
+         }, []);
 
 
     return (
-        <div  style={{ backgroundColor: 'whitesmoke'}}>
+        <div  data-aos="fade-up"  style={{ backgroundColor: 'whitesmoke'}}>
              
          
          {/* contact part  */}
-        <Grid  sx={{p: 5}} container spacing={2}>
+        <Grid sx={{p: 5}} container spacing={2}>
            
 
                      <Grid  sx={{fontSize: 20}} item  xs={12} md={6}>                      

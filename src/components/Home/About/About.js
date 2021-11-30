@@ -1,13 +1,20 @@
 import { Container, Grid, Link, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+ }, []);
+
     return (
         <div >
           
          
-           <Container  sx={{ flexGrow: 1 }}>
+           <Container data-aos="fade-right" sx={{ flexGrow: 1 }}>
              <Grid  sx={{p: 5}} container spacing={2}>
               
               
