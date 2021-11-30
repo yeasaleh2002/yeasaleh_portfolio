@@ -31,7 +31,7 @@ const Project = ({project}) => {
                        Tecnology Used: {tecnology}
                   </Typography>
                   <Typography variant="caption" display="block" gutterBottom >
-                  {about.slice(0, 205)}.
+                  {about}.
                   </Typography>
                                        
            

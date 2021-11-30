@@ -15,10 +15,12 @@ import Home from "./components/Home/Home/Home";
 import Blogs from "./components/Home/Blogs/Blogs";
 
 
+
 function App() {
   return (
     <div className="App" >
-          
+           
+       
         <Router>     
         
             <Header></Header>
@@ -60,7 +62,7 @@ function App() {
          <Footer></Footer>
 
        </Router>
-        
+     
     </div>
   );
 }

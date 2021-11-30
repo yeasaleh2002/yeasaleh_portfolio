@@ -7,6 +7,7 @@ import Projects from '../Projects/Projects';
 import Typical from 'react-typical'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Services from '../Services/Services';
 
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
 
     return (
         <div>
-          <Container data-aos="fade-up" sx={{ flexGrow: 1 }}>       
+          <Container data-aos="fade-up"  sx={{ flexGrow: 1 }}>       
             <Grid  sx={{p: 5}} container spacing={2}>
                
                {/* Our dream description part*/}
@@ -64,7 +65,11 @@ const Home = () => {
             </Grid>
 
          </Container>
-            
+        
+           <Box data-aos="fade-right">
+           <Services></Services>
+           </Box>
+
            <Box data-aos="fade-up">
            <Projects></Projects>
            </Box>
@@ -73,7 +78,7 @@ const Home = () => {
            <About></About>
            </Box>
 
-           <Box data-aos="flip-right">
+           <Box data-aos="zoom-out-down">
            <Contact></Contact>
            </Box>
            

@@ -15,6 +15,7 @@ import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText'; */
 
+
 const Header = () => {
 
 
@@ -123,7 +124,7 @@ const Header = () => {
                   <Link  style={{textDecoration: 'none', color: 'white'}}  to="/about"> <Button color="inherit">About</Button> </Link>
                   <Link  style={{textDecoration: 'none', color: 'white'}}  to="/contact"> <Button color="inherit">Contact</Button> </Link>
                   <Button >  <a  style={{textDecoration: 'none', color: 'white'}}  className="link-button" href="https://drive.google.com/file/d/1BKCozUYxe3K6xTIzdbqBQAS0CuuB7hKu/view?usp=sharing" target="blank"> Download Resume </a> </Button>
-                
+                   
               </Box>            
             </Toolbar>
           </AppBar>
