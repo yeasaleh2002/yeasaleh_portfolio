@@ -58,7 +58,7 @@ const Home = () => {
                     </Box>
                 </Grid>
 
-                {/* Our dream image part */}
+             
                 <Grid  sx={{mt: 7, mb: 3}} item xs={12} md={6} >
                     <img  style={{ width: '100%', borderRadius: '10%' }} src="https://i.ibb.co/mBFYNTr/saleh2.png"  alt="saleh" />
                 </Grid>
@@ -77,11 +77,11 @@ const Home = () => {
            <Box data-aos="fade-left" >
            <About></About>
            </Box>
-
+ 
            <Box data-aos="zoom-out-down">
            <Contact></Contact>
            </Box>
-           
+            
          
            
         </div>

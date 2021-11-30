@@ -26,7 +26,7 @@ const Services = () => {
                     
                        
                         <Typography variant="caption" display="block" gutterBottom >
-                        Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. 
+                         Web development is the work involved in developing a website for the Internet or an internet. Web development can range from developing a simple single static page of plain text to complex web applications, businesses, and social network services. 
                         </Typography>
 
                                         

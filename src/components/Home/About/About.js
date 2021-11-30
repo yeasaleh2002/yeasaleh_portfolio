@@ -6,18 +6,16 @@ const About = () => {
     return (
         <div >
           
-
-
-         {/* safety packages */}
+         
            <Container  sx={{ flexGrow: 1 }}>
              <Grid  sx={{p: 5}} container spacing={2}>
               
-              {/* safety packages image*/}
+              
                <Grid  sx={{mt: 4, mb: 3}} item xs={12} md={6} >
                     <img  style={{ width: '100%', borderRadius: '10px'}} src="https://i.ibb.co/bgw6rXh/1613136254435-1-e.jpg"  alt="bike" />
                 </Grid>
 
-                {/* safety packages description*/}
+               
                 <Grid  item  xs={12} md={6}>
                     <Box sx={{p: 2}}>
                         <Typography variant="h4" sx={{mb: 2, color: 'red'}}>
