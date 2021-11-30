@@ -1,14 +1,23 @@
 import { Button, Container, Grid, Link, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useEffect } from 'react';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
+import Typical from 'react-typical'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Home = () => {
+
+     useEffect(() => {
+        Aos.init({ duration: 2000 })
+     }, []);
+
     return (
         <div>
-          <Container  sx={{ flexGrow: 1 }}>       
+          <Container data-aos="fade-up" sx={{ flexGrow: 1 }}>       
             <Grid  sx={{p: 5}} container spacing={2}>
                
                {/* Our dream description part*/}
@@ -21,8 +30,25 @@ const Home = () => {
                         I AM YEASALEH
                         </Typography>
                         <Typography variant="h4"  sx={{ my: 3,  fontWeight: 'bold', color: '#EA3188' }}>
-                         I AM A REACT FRONT END WEB DEVELOPER.
-                      </Typography>
+                         I AM A{' '}
+                    
+                            <Typical 
+                                loop={Infinity}
+                                wrapper="b"
+                                steps={[
+                                    'WEB DEVELOPER.',
+                                    2000,
+                                    'REACT DEVELOPER.',
+                                    1500,
+                                    'FRONT END WEB DEVELOPER.',
+                                    2000,
+                                    'MERN STACK WEB DEVELOPER.',
+                                    1500,
+
+                                ]}
+                            /> 
+
+                         </Typography>
                      
                         <Link   href="https://drive.google.com/file/d/1BKCozUYxe3K6xTIzdbqBQAS0CuuB7hKu/view?usp=sharing" underline="none" target="_blank">
                         <Button  style={{ color: 'white', background: "tomato" }}>   Download  Resume   </Button>
@@ -39,10 +65,20 @@ const Home = () => {
 
          </Container>
             
-
+           <Box data-aos="fade-up">
            <Projects></Projects>
+           </Box>
+
+           <Box data-aos="fade-left" >
            <About></About>
+           </Box>
+
+           <Box data-aos="flip-right">
            <Contact></Contact>
+           </Box>
+           
+         
+           
         </div>
     );
 };

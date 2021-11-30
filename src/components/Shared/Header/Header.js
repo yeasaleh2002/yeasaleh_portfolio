@@ -119,9 +119,10 @@ const Header = () => {
               
                   <Link  style={{textDecoration: 'none', color: 'white'}}  to="/home"> <Button color="inherit">Home</Button> </Link>
                   <Link  style={{textDecoration: 'none', color: 'white'}}  to="/projects"> <Button color="inherit">Projects</Button> </Link>
+                  <Link  style={{textDecoration: 'none', color: 'white'}}  to="/blogs"> <Button color="inherit">Blogs</Button> </Link>
                   <Link  style={{textDecoration: 'none', color: 'white'}}  to="/about"> <Button color="inherit">About</Button> </Link>
                   <Link  style={{textDecoration: 'none', color: 'white'}}  to="/contact"> <Button color="inherit">Contact</Button> </Link>
-                  <Button >  <a  style={{textDecoration: 'none', color: 'white'}}  class="link-button" href="https://drive.google.com/file/d/1BKCozUYxe3K6xTIzdbqBQAS0CuuB7hKu/view?usp=sharing" target="blank"> Download Resume </a> </Button>
+                  <Button >  <a  style={{textDecoration: 'none', color: 'white'}}  className="link-button" href="https://drive.google.com/file/d/1BKCozUYxe3K6xTIzdbqBQAS0CuuB7hKu/view?usp=sharing" target="blank"> Download Resume </a> </Button>
                 
               </Box>            
             </Toolbar>

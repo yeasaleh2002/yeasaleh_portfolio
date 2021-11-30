@@ -1,14 +1,18 @@
 import { Button, CardContent, CardMedia, Grid, Paper, Typography, Link } from '@mui/material';
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Project = ({project}) => {
 
     const { name, picture, tecnology, about, liveLink, serverLink, clientLink} = project || '';
 
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+     }, []);
 
     return (
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid data-aos="fade-up" item xs={12} sm={6} md={6}>
         <Paper elevation={3} sx={{py: 1}}>
          
                 <CardMedia
@@ -29,9 +33,7 @@ const Project = ({project}) => {
                   <Typography variant="caption" display="block" gutterBottom >
                   {about.slice(0, 205)}.
                   </Typography>
-                  
-               
-                       
+                                       
            
                {  serverLink ?
                     <>

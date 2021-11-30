@@ -12,11 +12,15 @@ import Projects from './components/Home/Projects/Projects';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
 import Home from "./components/Home/Home/Home";
+import Blogs from "./components/Home/Blogs/Blogs";
+
 
 function App() {
   return (
     <div className="App" >
-        <Router>          
+          
+        <Router>     
+        
             <Header></Header>
         
          <Switch>
@@ -31,6 +35,10 @@ function App() {
 
            <Route path="/projects">
              <Projects />
+           </Route>
+
+           <Route path="/blogs">
+             <Blogs />
            </Route>
 
 
