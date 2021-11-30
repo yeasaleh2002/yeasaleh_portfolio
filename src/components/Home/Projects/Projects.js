@@ -21,7 +21,7 @@ const Projects = () => {
         <Container sx={{my: 8}}> 
             <Typography sx={{my: 5, color: 'info.main', fontWeight: 'bold'}} variant="h3">Projects</Typography>
                         
-                <Grid container spacing={2}>
+                <Grid container spacing={4}>
                     {
                        projects.map(project => <Project
                             key = {project._id}

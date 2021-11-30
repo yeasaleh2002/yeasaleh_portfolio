@@ -68,9 +68,15 @@ const Home = () => {
         
 
            <Services></Services>    
-           <Projects></Projects>       
+           <Projects></Projects>  
+
+           <Box data-aos="fade-right">     
            <About></About>
+           </Box>
+            
+           <Box data-aos="fade-up">          
            <Contact></Contact>     
+           </Box>
            
         </div>
     );

@@ -29,10 +29,11 @@ const Project = ({project}) => {
                           {name}
                   </Typography>
               
-                  <Typography variant="h6" gutterBottom component="div">
-                       Tecnology Used: {tecnology}
+                  <Typography sx={{fontSize: "20px"}} gutterBottom component="div">
+                      <b> Tecnology Used: </b> {tecnology}
                   </Typography>
-                  <Typography variant="caption" display="block" gutterBottom >
+
+                  <Typography sx={{fontSize: "13px"}} variant="caption" display="block" gutterBottom >
                   {about}.
                   </Typography>
 

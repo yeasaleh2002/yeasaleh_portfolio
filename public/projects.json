@@ -19,7 +19,7 @@
     "liveLink" : "https://tourism-lover.web.app/",
     "clientLink" : "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-yeasaleh2002",
     "serverLink" : "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-yeasaleh2002",
-    "about": "Tourism lover is a government approved private company that is working to help people who come on tour.\r\n"
+    "about": "Tourism lover is a tourist booking website.\r\n"
   },
   {
     "_id": "614f607bf1fcae172ebcaadb",
@@ -37,10 +37,10 @@
     "index": 3,
     "picture": "https://i.ibb.co/Ry206YN/Screenshot-212.png",
     "name": "Code Knowledge",
-    "tecnology": " React , React Router , React Bootstrap",
+    "tecnology": " React , React Router , React Bootstrap, Css",
     "liveLink" : "https://code-knowledge.netlify.app/",
     "clientLink" : "https://github.com/ProgrammingHeroWC4/review-website-yeasaleh2002",
-    "about": "The project is create to develop a little online medium for teaching nationwide programming under the supervision of Code Knowledge.\r\n"
+    "about": "Code Knowledge online teaching Website.\r\n"
   },
   {
     "_id": "614f607bfd7a19a91675348a",
@@ -61,7 +61,7 @@
     "tecnology": "html , css , bootstrap , JavaScript",
     "liveLink" : "https://inspironshop.netlify.app/",
     "clientLink" : "https://github.com/Programming-Hero-Web-Course4/ranga-store-fix-yeasaleh2002",
-    "about": "Tourism lover is a government approved private company that is working to help people who come on tour.\r\n"
+    "about": "Inspiron is a online shop.\r\n"
   },
   {
     "_id": "614f607bf1fcae172ebcaadb43",
@@ -71,7 +71,7 @@
     "tecnology": "html , css , bootstrap , JavaScript",
     "liveLink" : "https://book-assignment-six.netlify.app/",
     "clientLink" : "https://github.com/Programming-Hero-Web-Course4/book-archive-yeasaleh2002",
-    "about": "This website is made for a medical clinic.\r\n"
+    "about": "Book Archeive is a booking list website.\r\n"
   },
  
   {
@@ -82,27 +82,27 @@
     "tecnology": "html , css , bootstrap , JavaScript",
     "liveLink" : "https://macbookproassignment5.netlify.app/",
     "clientLink" : "https://github.com/programming-hero-web-course2/mac-book-pro-yeasaleh2002",
-    "about": "The project is create to develop a little online medium for teaching nationwide programming under the supervision of Code Knowledge.\r\n"
+    "about": "This website only for macbook shop.\r\n"
   },
   {
     "_id": "614f607bfd7a19a91675348a232",
     "index": 8,
-    "picture": "https://i.ibb.co/vX2ydKZ/Screenshot-217.png",
+    "picture": "https://i.ibb.co/HtdqC4T/Screenshot-245.png",
     "name": "Honda Bike Cbr",
     "tecnology": "html, css , bootstrap",
     "liveLink" : "https://hondabike-cbr-assignment.netlify.app/",
     "clientLink" : "https://github.com/programming-hero-web-course2/honda-cbr-bootstrap-assignment-yeasaleh2002",
-    "about": "The project is create to find volunteers for good social work.\r\n"
+    "about": "Honda Bike Cbr is a Responsive Landing.\r\n"
   },
   {
     "_id": "614f607be689bf6a13ab8e6b8685",
     "index": 9,
-    "picture": "https://i.ibb.co/HtdqC4T/Screenshot-245.png",
+    "picture": "https://i.ibb.co/pxf7XBk/Screenshot-272.png",
     "name": "Responsive Football",
     "tecnology": "html , css",
     "liveLink" : "https://yeasaleh2002.github.io/Responsive-football/index.html",
     "clientLink" : "https://github.com/yeasaleh2002/Responsive-football",
-    "about": "Motoz is an online bike shop.\r\n"
+    "about": "It is a Reponsive Football Data Website.\r\n"
   },
   {
     "_id": "614f607be689bf6a13ab8e6b6456",
@@ -112,7 +112,7 @@
     "tecnology": "html, css , bootstrap",
     "liveLink" : "https://yeasaleh2002.github.io/doctorPortal/index.html",
     "clientLink" : "https://github.com/yeasaleh2002/doctorPortal",
-    "about": "Motoz is an online bike shop.\r\n"
+    "about": "Doctor Portal is a Simple doctors list web page. \r\n"
   },
   {
     "_id": "614f607bd8d2cb0e91af7a656456",
@@ -122,6 +122,6 @@
     "tecnology": "html, css",
     "liveLink" : "https://yeasaleh2002.github.io/food-network-assigment/index.html",
     "clientLink" : "https://github.com/yeasaleh2002/food-network-assigment",
-    "about": "Tourism lover is a government approved private company that is working to help people who come on tour.\r\n"
+    "about": "Food network is a landing page created on html, css.\r\n"
   }
 ]
