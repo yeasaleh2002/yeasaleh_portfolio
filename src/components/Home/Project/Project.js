@@ -1,11 +1,13 @@
-import { Button, CardContent, CardMedia, Grid, Paper, Typography, Link } from '@mui/material';
+import { Button, CardContent, CardMedia, Grid, Paper, Typography } from '@mui/material';
 import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
+
 
 const Project = ({project}) => {
 
-    const { name, picture, tecnology, about, liveLink, serverLink, clientLink} = project || '';
+    const {_id, name, picture, tecnology, about} = project || '';
 
     useEffect(() => {
         Aos.init({ duration: 2000 })
@@ -33,30 +35,16 @@ const Project = ({project}) => {
                   <Typography variant="caption" display="block" gutterBottom >
                   {about}.
                   </Typography>
-                                       
-           
-               {  serverLink ?
-                    <>
-                    <Link   href={liveLink} underline="none" target="_blank">
-                    <Button variant="contained" style={{  color: 'white', background: "tomato", margin: "5px" }}> Live Website </Button>
-                   </Link>
-                   <Link   href={clientLink} underline="none" target="_blank">
-                    <Button variant="contained" style={{  color: 'white', background: "tomato" ,margin: "5px" }}> Client Code </Button>
-                   </Link>
-                   <Link   href={serverLink} underline="none" target="_blank">
-                    <Button variant="contained" style={{  color: 'white', background: "tomato" , margin: "5px" }}> Server Code </Button>
-                   </Link>
-                   </>
-                   :
-                   <>
-                          <Link   href={liveLink} underline="none" target="_blank">
-                        <Button variant="contained" style={{  color: 'white', background: "tomato", margin: "5px" }}> Live Website </Button>
-                    </Link>
-                    <Link   href={clientLink} underline="none" target="_blank">
-                        <Button variant="contained" style={{  color: 'white', background: "tomato" ,margin: "5px" }}> Client Code </Button>
-                    </Link>
-                    </>
-                 }
+
+
+
+
+                 
+                {/* checking single service details  */}
+                <Link style={{textDecoration: "none"}} to={`/singleProject/${_id}`}>
+                <Button  variant="contained"> Check Details </Button>
+                </Link>
+
                                  
                   </CardContent>
    

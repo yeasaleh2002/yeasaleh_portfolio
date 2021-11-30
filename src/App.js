@@ -13,6 +13,7 @@ import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
 import Home from "./components/Home/Home/Home";
 import Blogs from "./components/Home/Blogs/Blogs";
+import SingleProject from "./components/Home/SingleProject/SingleProject";
 
 
 
@@ -38,6 +39,11 @@ function App() {
            <Route path="/projects">
              <Projects />
            </Route>
+
+           <Route path="/singleProject/:serviceId">
+               <SingleProject></SingleProject>
+            </Route>
+
 
            <Route path="/blogs">
              <Blogs />
