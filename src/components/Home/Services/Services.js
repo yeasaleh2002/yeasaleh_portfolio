@@ -22,6 +22,7 @@ const Services = () => {
                 
                         <CardMedia
                             component="img"
+                            data-aos="zoom-in-up"
                             style={{ width: '100%', height: '100%', margin: '0 auto' }}
                              src="https://i.ibb.co/dW079mm/images-10.jpg"
                             alt="green iguana"
@@ -47,6 +48,7 @@ const Services = () => {
                 
                         <CardMedia
                             component="img"
+                            data-aos="zoom-in-up"
                             style={{ width: '100%', height: '100%', margin: '0 auto' }}
                              src='https://i.ibb.co/Fmbnj9p/service-card-Bug.jpg'
                             alt="green iguana"
@@ -72,6 +74,7 @@ const Services = () => {
                 
                         <CardMedia
                             component="img"
+                            data-aos="zoom-in-down"
                             style={{ width: '100%', height: '100%', margin: '0 auto' }}
                              src="https://i.ibb.co/s21kv9W/psychology-web-design-00-lead.jpg"
                             alt="green iguana"
@@ -99,6 +102,7 @@ const Services = () => {
                 
                         <CardMedia
                             component="img"
+                            data-aos="zoom-in-down"
                             style={{ width: '100%', height: '100%', margin: '0 auto' }}
                              src='https://i.ibb.co/qWLsVmS/images-11-1.jpg'
                             alt="green iguana"

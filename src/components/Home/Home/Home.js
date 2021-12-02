@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import Services from '../Services/Services';
 
 
+
 const Home = () => {
 
      useEffect(() => {
@@ -17,8 +18,9 @@ const Home = () => {
      }, []);
 
     return (
-        <div>
-          <Container data-aos="fade-up"  sx={{ flexGrow: 1 }}>       
+        <div >
+
+          <Container  data-aos="fade-up"  sx={{ flexGrow: 1 }}>       
             <Grid  sx={{p: 5}} container spacing={2}>
                
 
@@ -51,7 +53,7 @@ const Home = () => {
 
                          </Typography>
                      
-                        <Link   href="https://drive.google.com/file/d/1BKCozUYxe3K6xTIzdbqBQAS0CuuB7hKu/view?usp=sharing" underline="none" target="_blank">
+                        <Link   href="https://drive.google.com/file/d/1ea1ZF78Xvpy_bgi4KrsSHXQ96bJJoEiC/view?usp=sharing" underline="none" target="_blank">
                         <Button  style={{ color: 'white', background: "tomato" }}>   Download  Resume   </Button>
                         </Link>
                        
@@ -65,9 +67,11 @@ const Home = () => {
             </Grid>
 
          </Container>
-        
+       
 
-           <Services></Services>    
+  
+           <Services></Services>
+         
            <Projects></Projects>  
 
            <Box data-aos="fade-right">     

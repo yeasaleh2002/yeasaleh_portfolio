@@ -90,6 +90,13 @@ const Header = () => {
              </ListItemText > 
              </ListItem>
            <Divider />
+
+             <ListItem button >
+             <ListItemText >
+             <Button >  <a  style={{ textDecoration: 'none', color: 'white'}}  className="link-button" href="https://drive.google.com/file/d/1ea1ZF78Xvpy_bgi4KrsSHXQ96bJJoEiC/view?usp=sharing" target="blank"> Download Resume </a> </Button>
+             </ListItemText > 
+             </ListItem>
+           <Divider />
        </List>
  
      </Box>
@@ -128,7 +135,7 @@ const Header = () => {
                   <Link  style={{textDecoration: 'none', color: 'white'}}  to="/blogs"> <Button color="inherit">Blogs</Button> </Link>
                   <Link  style={{textDecoration: 'none', color: 'white'}}  to="/about"> <Button color="inherit">About</Button> </Link>
                   <Link  style={{textDecoration: 'none', color: 'white'}}  to="/contact"> <Button color="inherit">Contact</Button> </Link>
-                  <Button >  <a  style={{ textDecoration: 'none', color: 'white' , padding: "10px"}}  className="link-button" href="https://drive.google.com/file/d/1BKCozUYxe3K6xTIzdbqBQAS0CuuB7hKu/view?usp=sharing" target="blank"> Download Resume </a> </Button>
+                  <Button >  <a  style={{ textDecoration: 'none', color: 'white' , padding: "10px"}}  className="link-button" href="https://drive.google.com/file/d/1ea1ZF78Xvpy_bgi4KrsSHXQ96bJJoEiC/view?usp=sharing" target="blank"> Download Resume </a> </Button>
                    
               </Box>            
             </Toolbar>

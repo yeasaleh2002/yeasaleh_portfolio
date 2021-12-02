@@ -19,6 +19,7 @@ const Project = ({project}) => {
          
                 <CardMedia
                       component="img"
+                      data-aos="zoom-in-up"
                       style={{ width: '100%', height: '100%', margin: '0 auto' }}
                       image={picture}
                       alt="green iguana"

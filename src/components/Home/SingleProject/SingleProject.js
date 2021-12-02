@@ -49,18 +49,21 @@ const SingleProject = ({project}) => {
          
                 <CardMedia
                       component="img"
+                      data-aos="zoom-in-down"
                       style={{ width: '100%', height: '100%', margin: '0 auto' }}
                       image={singleProject?.picture}
                       alt="green iguana"                      
                   />
                 <CardMedia
                       component="img"
+                      data-aos="zoom-in-up"
                       style={{ width: '100%', height: '100%', margin: '0 auto' }}
                       image={singleProject?.picture2}
                       alt="green iguana"                      
                   />
                 <CardMedia
                       component="img"
+                      data-aos="zoom-in-left"
                       style={{ width: '100%', height: '100%', margin: '0 auto' }}
                       image={singleProject?.picture3}
                       alt="green iguana"                      
