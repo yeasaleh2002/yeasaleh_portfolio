@@ -29,7 +29,7 @@ const Home = () => {
                         <Typography variant="h3" sx={{mb: 2, color: 'gray'}}>
                            Hello
                         </Typography>
-                        <Typography variant="h2" sx={{fontWeight: "bold", color: "Tomato"}}>
+                        <Typography variant="h3" sx={{fontWeight: "bold", color: "Tomato"}}>
                         I AM YEASALEH
                         </Typography>
                         <Typography variant="h4"  sx={{ my: 3,  fontWeight: 'bold', color: '#EA3188' }}>
