@@ -66,6 +66,36 @@ const Blogs = () => {
 
 
         </Typography>
+        <Typography variant="h6" style={{fontSize: '28px', paddingTop: "40px", textAlign: "center", color: 'red'}} gutterBottom component="div">
+         Blog Name: Node.js Basic Concepts
+        </Typography>
+        <Typography>
+        What is Nodejs? 
+        Node.js is not a programming language. It is an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. It is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+
+        Node.js একটি প্রোগ্রামিং ভাষা নয়। এটি একটি অ্যাসিঙ্ক্রোনাস ইভেন্ট-চালিত জাভাস্ক্রিপ্ট রানটাইম, Node.js পরিমাপযোগ্য নেটওয়ার্ক অ্যাপ্লিকেশন তৈরি করার জন্য ডিজাইন করা হয়েছে। এটি একটি ওপেন সোর্স, ক্রস-প্ল্যাটফর্ম, ব্যাক-এন্ড জাভাস্ক্রিপ্ট রানটাইম পরিবেশ যা V8 ইঞ্জিনে চলে এবং ওয়েব ব্রাউজারের বাইরে জাভাস্ক্রিপ্ট কোড কার্যকর করে।
+        <br></br> <br></br><br></br>
+        What is jwt?<br></br><br></br>
+        The JSON Web Token is a proposed Internet standard for creating data with optional signatures and / or optional encryption whose payload contains JSON which asserts a number of requirements. Tokens are signed using either a private privacy or a public / private key. 
+        
+        JSON ওয়েব টোকেন হল ঐচ্ছিক স্বাক্ষর এবং/অথবা ঐচ্ছিক এনক্রিপশন সহ ডেটা তৈরি করার জন্য একটি প্রস্তাবিত ইন্টারনেট স্ট্যান্ডার্ড যার পেলোডে JSON রয়েছে যা অনেকগুলি প্রয়োজনীয়তা জাহির করে। টোকেনগুলি হয় একটি ব্যক্তিগত গোপনীয়তা বা একটি সর্বজনীন/প্রাইভেট কী ব্যবহার করে স্বাক্ষরিত হয়।
+
+       <br></br><br></br>
+
+       What is crud operation?<br></br><br></br>
+        In computer programming, create, read, update, and delete are the four basic operations of persistent storage. CRUD is also sometimes used to describe user interface conventions that facilitate viewing, searching, and changing information using computer-based forms and reports.
+
+        কম্পিউটার প্রোগ্রামিং-এ, ক্রিয়েট, রিড, আপডেট এবং ডিলিট হল ক্রমাগত স্টোরেজের চারটি মৌলিক কাজ। CRUD কখনও কখনও ব্যবহারকারী ইন্টারফেস কনভেনশনগুলি বর্ণনা করতে ব্যবহৃত হয় যা কম্পিউটার-ভিত্তিক ফর্ম এবং প্রতিবেদনগুলি ব্যবহার করে তথ্য দেখা, অনুসন্ধান এবং পরিবর্তন করতে সহায়তা করে।
+
+        <br></br><br></br>
+        What is express.js?<br></br><br></br>
+        Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. APIs.
+
+        এক্সপ্রেস হল একটি ন্যূনতম এবং নমনীয় Node.js ওয়েব অ্যাপ্লিকেশন ফ্রেমওয়ার্ক যা ওয়েব এবং মোবাইল অ্যাপ্লিকেশনগুলির জন্য বৈশিষ্ট্যগুলির একটি শক্তিশালী সেট প্রদান করে। এপিআই । 
+        <br></br>
+       
+
+        </Typography>
         </Container>
     );
 };
