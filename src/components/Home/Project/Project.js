@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+import './Project.css';
 
 
 const Project = ({project}) => {
@@ -14,8 +15,8 @@ const Project = ({project}) => {
      }, []);
 
     return (
-        <Grid data-aos="fade-up" item xs={12} sm={6} md={6}>
-        <Paper elevation={3} sx={{py: 1}}>
+        <Grid  data-aos="fade-up" item xs={12} sm={6} md={6} lg={4}>
+        <Paper  className='projects' elevation={3} sx={{py: 1}}>
          
                 <CardMedia
                       component="img"
@@ -26,11 +27,11 @@ const Project = ({project}) => {
                   />
 
                   <CardContent>
-                  <Typography sx={{color: 'info.main', fontWeight: 'bold'}} variant="h4" gutterBottom component="div">
+                  <Typography sx={{color: 'info.main', fontWeight: 'bold'}} variant="h6" gutterBottom component="div">
                           {name}
                   </Typography>
               
-                  <Typography sx={{fontSize: "20px"}} gutterBottom component="div">
+                  <Typography sx={{fontSize: "16px"}} gutterBottom component="div">
                       <b> Tecnology Used: </b> {tecnology}
                   </Typography>
 
@@ -38,10 +39,6 @@ const Project = ({project}) => {
                   {about}.
                   </Typography>
 
-
-
-
-                 
                 {/* checking single service details  */}
                 <Link style={{textDecoration: "none"}} to={`/singleProject/${_id}`}>
                 <Button  variant="contained"> Check Details </Button>

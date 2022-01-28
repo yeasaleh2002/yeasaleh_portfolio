@@ -1,6 +1,7 @@
 .App {
   
-  overflow-x: hidden;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .App-logo {

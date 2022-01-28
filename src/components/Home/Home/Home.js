@@ -10,18 +10,19 @@ import 'aos/dist/aos.css';
 import Services from '../Services/Services';
 
 
-
 const Home = () => {
 
+   
      useEffect(() => {
         Aos.init({ duration: 2000 })
      }, []);
 
     return (
-        <div >
+        <div style={{background: '#5089E2', color: 'white'}}>
 
-          <Container  data-aos="fade-up"  sx={{ flexGrow: 1 }}>       
-            <Grid  sx={{p: 5}} container spacing={2}>
+          <Box sx={{ background: 'black'}}>
+          <Container  data-aos="fade-up"  sx={{ flexGrow: 1}}>       
+            <Grid sx={{p: 5}} container spacing={2}>
                
 
                 <Grid  item  xs={12} md={6}>
@@ -53,7 +54,7 @@ const Home = () => {
 
                          </Typography>
                      
-                        <Link   href="https://drive.google.com/file/d/1ea1ZF78Xvpy_bgi4KrsSHXQ96bJJoEiC/view?usp=sharing" underline="none" target="_blank">
+                        <Link   href="https://drive.google.com/file/d/1rt4XzIyCQZnQno9SBQMTRoatjNUnyuJx/view?usp=sharing" underline="none" target="_blank">
                         <Button  style={{ color: 'white', background: "tomato" }}>   Download  Resume   </Button>
                         </Link>
                        
@@ -67,7 +68,7 @@ const Home = () => {
             </Grid>
 
          </Container>
-       
+         </Box>
 
   
            <Services></Services>

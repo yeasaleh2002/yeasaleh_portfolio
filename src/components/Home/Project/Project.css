@@ -1,0 +1,16 @@
+.projects:hover{
+    transition: .9s;
+    box-shadow: 5px 10px 5px black;
+    border-radius: 10px;
+    background-color: pink;
+    color: rgb(44, 40, 40);
+}
+
+/* 
+https://i.ibb.co/VtgNynM/Screenshot-10.png
+https://i.ibb.co/3vccJZ8/Screenshot-11.png
+https://i.ibb.co/7SMtJLV/Screenshot-12.png
+https://i.ibb.co/4NRdFFD/Screenshot-13.png
+https://i.ibb.co/ZH8C9cc/Screenshot-14.png
+https://i.ibb.co/ThJ77Cv/Screenshot-15.png
+*/

@@ -1,0 +1,7 @@
+.services:hover{
+    transition: .9s;
+    box-shadow: 5px 10px 5px black;
+    border-radius: 10px;
+    background-color: rgb(31, 28, 28);
+    color: cyan;
+}

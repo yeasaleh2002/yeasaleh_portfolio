@@ -38,13 +38,12 @@ const SingleProject = ({project}) => {
      }, []);
 
     return (
-
+     <div style={{background: 'gray', color: 'white'}}>
      <Container  sx={{ mx: "auto" }}>
         <Grid sx={{ p: "50px"}} data-aos="fade-up" item xs={12}>
-        <Typography style={{ paddingTop: "40px", textAlign: "center"}}  gutterBottom component="div">
-            Project Id:  {serviceId}
+        <Typography style={{paddingTop: "40px", textAlign: "center"}}  gutterBottom >
+            Project Id: {serviceId}
             </Typography>
-              
         <Paper elevation={3} sx={{py: 1}}>
          
                 <CardMedia
@@ -132,6 +131,7 @@ const SingleProject = ({project}) => {
         </Paper>  
       </Grid>
       </Container>
+      </div>
     );
 };
 

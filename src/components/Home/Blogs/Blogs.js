@@ -3,7 +3,8 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <Container>
+        <div >
+       {/*  <Container>
         <Typography variant="h6" style={{fontSize: '28px', paddingTop: "40px", textAlign: "center", color: 'red'}} gutterBottom component="div">
          Blog Name: React Basic Concepts
         </Typography>
@@ -96,7 +97,9 @@ const Blogs = () => {
        
 
         </Typography>
-        </Container>
+        </Container> */}
+         <h1 style={{color: 'red', textAlign:"center"}}> Blogs Coming soon!!</h1>
+        </div>
     );
 };
 

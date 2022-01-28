@@ -10,9 +10,10 @@ const About = () => {
     Aos.init({ duration: 2000 })
  }, []);
 
+
     return (
-        <div >
-          
+        <div style={{background: 'black', color: 'white'}}>
+
          
            <Container data-aos="fade-right" sx={{ flexGrow: 1 }}>
              <Grid  sx={{p: 5}} container spacing={2}>
@@ -24,7 +25,7 @@ const About = () => {
 
                
                 <Grid  item  xs={12} md={6}>
-                    <Box sx={{p: 2}}>
+                    <Box sx={{p: 2, color: 'white'}}>
                         <Typography variant="h4" sx={{mb: 2, color: 'red'}}>
                            About Me
                         </Typography>
@@ -58,14 +59,14 @@ const About = () => {
                           
                           <b> ● Github Profile : </b>
                          
-                            <Link  style={{ color: 'black'}}  href="https://github.com/yeasaleh2002" underline="none" target="_blank">
+                            <Link  style={{ color: 'white'}}  href="https://github.com/yeasaleh2002" underline="none" target="_blank">
                                  https://github.com/yeasaleh2002
                             </Link>
                         
                         </Typography>
                         <Typography  sx={{ my: 1, fontSize: 18, fontWeight: 400}}>
                           <b> ●  LinkedIn Profile :  </b>
-                            <Link style={{ color: 'black'}} href="https://www.linkedin.com/in/yea-saleh-970281218/" underline="none" target="_blank">
+                            <Link style={{ color: 'white'}} href="https://www.linkedin.com/in/yea-saleh-970281218/" underline="none" target="_blank">
                              https://www.linkedin.com/in/yea-saleh-970281218/
                             </Link>
                         </Typography>

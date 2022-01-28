@@ -18,8 +18,9 @@ const Projects = () => {
 
 
     return (
-        <Container sx={{my: 8}}> 
-            <Typography sx={{my: 5, color: 'info.main', fontWeight: 'bold'}} variant="h3">Projects</Typography>
+        <div style={{background: 'black', color: 'white'}}>
+        <Container sx={{py: 8}}> 
+            <Typography sx={{my: 5, color: 'white', fontWeight: 'bold'}} variant="h3">Projects</Typography>
                         
                 <Grid container spacing={4}>
                     {
@@ -33,6 +34,7 @@ const Projects = () => {
                     }
                 </Grid>
         </Container>
+        </div>
     );
 };
 

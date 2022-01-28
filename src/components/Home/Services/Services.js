@@ -2,6 +2,7 @@ import { CardContent, CardMedia, Container, Grid, Paper, Typography } from '@mui
 import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import './Services.css';
 
 const Services = () => {
 
@@ -11,13 +12,14 @@ const Services = () => {
  }, []);
 
     return (
+      <div style={{background: '#B1A296', padding: '1px'}}>
         <Container sx={{my: 8}}> 
-        <Typography sx={{my: 5, color: 'salmon', fontWeight: 'bold'}} variant="h3">Services</Typography>
+        <Typography sx={{my: 5, color: 'cyan', fontWeight: 'bold'}} variant="h3">Services</Typography>
                     
             <Grid container spacing={3}>
                
-              <Grid data-aos="fade-up" item xs={12} sm={6} md={4}>
-                <Paper elevation={3} sx={{py: 1, borderLeft: " 6px solid #F40BE5", paddingLeft: "10px", paddingRight: "6px"} }>
+              <Grid  data-aos="fade-up" item xs={12} sm={6} md={4}>
+                <Paper className='services' elevation={3} sx={{py: 1, borderLeft: " 6px solid #F40BE5", paddingLeft: "10px", paddingRight: "6px"} }>
                 
                 
                         <CardMedia
@@ -44,7 +46,7 @@ const Services = () => {
                 </Paper>  
             </Grid>
               <Grid data-aos="fade-down" item xs={12} sm={6} md={4}>
-                <Paper elevation={3} sx={{py: 1, borderLeft: " 6px solid #08F9F0", paddingLeft: "10px", paddingRight: "6px"}}>
+                <Paper className='services' elevation={3} sx={{py: 1, borderLeft: " 6px solid #08F9F0", paddingLeft: "10px", paddingRight: "6px"}}>
                 
                         <CardMedia
                             component="img"
@@ -70,7 +72,7 @@ const Services = () => {
                 </Paper>  
             </Grid>
               <Grid data-aos="fade-right" item xs={12} sm={6} md={4}>
-                <Paper elevation={3} sx={{py: 1, borderLeft: " 6px solid #44F908", paddingLeft: "10px", paddingRight: "6px"}}>
+                <Paper className='services' elevation={3} sx={{py: 1, borderLeft: " 6px solid #44F908", paddingLeft: "10px", paddingRight: "6px"}}>
                 
                         <CardMedia
                             component="img"
@@ -98,7 +100,7 @@ const Services = () => {
                 </Paper>  
             </Grid>
               <Grid data-aos="fade-left" item xs={12} sm={6} md={4}>
-                <Paper  elevation={3} sx={{py: 1, borderLeft: " 6px solid #F14715", paddingLeft: "10px", paddingRight: "6px"}}>
+                <Paper className='services'  elevation={3} sx={{py: 1, borderLeft: " 6px solid #F14715", paddingLeft: "10px", paddingRight: "6px"}}>
                 
                         <CardMedia
                             component="img"
@@ -125,6 +127,7 @@ const Services = () => {
 
             </Grid>
       </Container>
+      </div>
     );
 };
 
