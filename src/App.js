@@ -91,7 +91,7 @@ function App() {
             enable: true,
             outMode: "bounce",
             random: true,
-            speed: 2.5,
+            speed: 4,
             straight: false,
           },
           number: {
