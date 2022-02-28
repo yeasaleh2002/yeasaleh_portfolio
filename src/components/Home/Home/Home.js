@@ -54,8 +54,8 @@ const Home = () => {
 
                          </Typography>
                      
-                        <Link   href="https://drive.google.com/file/d/1rt4XzIyCQZnQno9SBQMTRoatjNUnyuJx/view?usp=sharing" underline="none" target="_blank">
-                        <Button  style={{ color: 'white', background: "tomato" }}>   Download  Resume   </Button>
+                        <Link   href="https://drive.google.com/file/d/1AOvNV2ozSAAXSL59AX-DEzvm8umuigUS/view?usp=sharing" underline="none" target="_blank">
+                        <Button  style={{ color: 'white', background: "tomato" }}>   Check  Resume   </Button>
                         </Link>
                        
                     </Box>
