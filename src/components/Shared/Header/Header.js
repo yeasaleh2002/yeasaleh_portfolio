@@ -6,156 +6,162 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link } from 'react-router-dom';
-import {  useTheme } from '@mui/material';
+import { useTheme } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
+import logo from "../../images/SalehLogo.png";
+import Yeasaleh_Resume from "../../images/Yeasaleh_Resume.pdf";
+import { HashLink } from 'react-router-hash-link';
 
 
 const Header = () => {
+  const theme = useTheme()
+  const useStyle = makeStyles({
 
-
-    const theme = useTheme()
-    const useStyle = makeStyles({
- 
-     navIcon: {
-         [theme.breakpoints.up('sm')]: {
-             display: 'none !important'
-           }
-     }, 
-     navItemContainer:{
-         [theme.breakpoints.down('sm')]: {
-             display: 'none !important'
-           } 
-     }, 
-      navLogo: {
-         [theme.breakpoints.down('sm')]: {
-             textAlign: 'right'
-           } 
+    navIcon: {
+      [theme.breakpoints.up('sm')]: {
+        display: 'none !important'
       }
-    })
-   
-   const { navIcon , navItemContainer, navLogo } = useStyle()
- 
-   // drawer state declare
-    const [state, setState] = React.useState(false);
- 
- 
- 
- // use drawer list
-    
-   const list = (
-     <Box
-       sx={{ width: 250, backgroundColor: '#4ECAED' }}
-       role="presentation"
-      
-     >
-       <List>
-           <ListItem button >
-             
-             <ListItemText >
-             <Link  style={{textDecoration: 'none', color: 'white'}}  to="/home"> <Button color="inherit">Home</Button> </Link>
-             </ListItemText > 
-             </ListItem>
-             <Divider />
- 
-             <ListItem button >
-             <ListItemText >
-             <Link  style={{textDecoration: 'none', color: 'white'}}  to="/projects"> <Button color="inherit">Projects</Button> </Link>
-             </ListItemText >
-             </ListItem>
-             <Divider />
- 
-             <ListItem button >
-             <ListItemText >
-             <Link  style={{textDecoration: 'none', color: 'white'}}  to="/blogs"> <Button color="inherit">Blogs</Button> </Link>
-             </ListItemText >
-             </ListItem>
-             <Divider />
- 
-             <ListItem button >
-             <ListItemText >
-             <Link  style={{textDecoration: 'none', color: 'white'}}  to="/about"> <Button color="inherit">About</Button> </Link>
-             </ListItemText > 
-             </ListItem>
-            <Divider />
+    },
+    navItemContainer: {
+      [theme.breakpoints.down('sm')]: {
+        display: 'none !important'
+      }
+    },
+    navLogo: {
+      [theme.breakpoints.down('sm')]: {
+        textAlign: 'right'
+      }
+    }
+  })
 
-             <ListItem button >
-             <ListItemText >
-             <Link  style={{textDecoration: 'none', color: 'white'}}  to="/contact"> <Button color="inherit">Contact</Button> </Link>
-             </ListItemText > 
-             </ListItem>
-           <Divider />
+  const { navIcon, navItemContainer, navLogo } = useStyle()
+  // drawer state declare
+  const [state, setState] = React.useState(false);
 
-             <ListItem button >
-             <ListItemText >
-             <Button >  <a  style={{ textDecoration: 'none', color: 'white'}}  className="link-button" href="https://drive.google.com/file/d/1rI83aB4pNPjQX4gQ01RrxIB8ZVa6G8t-/view?usp=sharing" target="blank"> Download Resume </a> </Button>
-             </ListItemText > 
-             </ListItem>
-           <Divider />
-       </List>
- 
-     </Box>
-   );
+  // use drawer list
+  const list = (
+    <Box
+      sx={{ width: 250, backgroundColor: '#111A28' }}
+      role="presentation"
+    >
+      <List>
+        <ListItem button >
+          <ListItemText >
+            <HashLink smooth to="/#">
+              <Button sx={{ color: "whitesmoke" }} onClick={() => setState(false)}>Home</Button>
+            </HashLink>
+          </ListItemText >
+        </ListItem>
+        <Divider />
+        <ListItem button >
+          <ListItemText >
+            <HashLink smooth to="/#AboutMe">
+              <Button sx={{ color: "whitesmoke" }} onClick={() => setState(false)}>About</Button>
+            </HashLink>
+          </ListItemText >
+        </ListItem>
+        <ListItem button >
+          <ListItemText >
+            <HashLink smooth to="/#MySkills">
+              <Button sx={{ color: "whitesmoke" }} onClick={() => setState(false)}>Skills</Button>
+            </HashLink>
+          </ListItemText >
+        </ListItem>
+        <Divider />
+        <ListItem button >
+          <ListItemText >
+            <HashLink smooth to="/#Projects">
+              <Button sx={{ color: "whitesmoke" }} onClick={() => setState(false)}>Projects</Button>
+            </HashLink>
+          </ListItemText >
+        </ListItem>
+        <Divider />
+        <ListItem button >
+          <ListItemText >
+            <HashLink smooth to="/#contact">
+              <Button sx={{ color: "whitesmoke" }} onClick={() => setState(false)}>Contact</Button>
+            </HashLink>
+          </ListItemText >
+        </ListItem>
+        <Divider />
+        <ListItem button >
+          <ListItemText >
+            <Button sx={{ color: "whitesmoke" }}>
+              <a href={Yeasaleh_Resume} download="yeasaleh_resume.pdf">
+                <Button style={{ color: "white", background: "#00CF5D" }}>
+                  Download Resume
+                </Button>
+              </a>
+            </Button>
+          </ListItemText >
+        </ListItem>
+        <Divider />
+      </List>
+    </Box>
+  );
 
- 
+  return (
+    <Box>
+      <Box sx={{ flexGrow: 1, bgcolor: "#111A28" }}>
+        <AppBar position="static" sx={{ p: 2, bgcolor: "#111A28" }}>
+          <Toolbar>
+            <IconButton
+              size="large"
+              edge="start"
+              aria-label="menu"
+              sx={{ mr: 2, color:"#00CF5D" }}
+              className={navIcon}
+              onClick={() => setState(true)}
 
-    return (
-        <>
-         <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static" sx={{p:2}}> 
-            <Toolbar>
-               <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-                className={navIcon}
-                onClick={() => setState(true)}
-              >
-                <MenuIcon />
-              </IconButton> 
-                 
-                 <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-               
-                 <img style={{ width: '65px', height: '50px', marginRight: '12px'}} src="https://i.ibb.co/mBFYNTr/saleh2.png"  alt="bike" />
-                    
-                  </Typography>
-             
-              <Box className={navItemContainer}>
-             
-              
-                  <Link  style={{textDecoration: 'none', color: 'white'}}  to="/home"> <Button color="inherit">Home</Button> </Link>
-                  <Link  style={{textDecoration: 'none', color: 'white'}}  to="/projects"> <Button color="inherit">Projects</Button> </Link>
-                  <Link  style={{textDecoration: 'none', color: 'white'}}  to="/blogs"> <Button color="inherit">Blogs</Button> </Link>
-                  <Link  style={{textDecoration: 'none', color: 'white'}}  to="/about"> <Button color="inherit">About</Button> </Link>
-                  <Link  style={{textDecoration: 'none', color: 'white'}}  to="/contact"> <Button color="inherit">Contact</Button> </Link>
-                  <Button >  <a  style={{ textDecoration: 'none', color: 'white' , padding: "10px"}}  className="link-button" href="https://drive.google.com/file/d/1AOvNV2ozSAAXSL59AX-DEzvm8umuigUS/view?usp=sharing" target="blank">Check Resume </a> </Button>
-                   
-              </Box>            
-            </Toolbar>
-          </AppBar>
-        </Box>
-
-
-          {/* use drawer */}
-          <div>          
-              <React.Fragment>
-                <Drawer                 
-                  open={state}
-                  onClose={() => setState(false)}
-                >
-                  {list}
-                </Drawer>
-              </React.Fragment>
-        </div>
-      </>
-    );
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <img style={{ width: '65px', height: '50px', marginRight: '12px' }} src={logo} alt="Logo" />
+            </Typography>
+            <Box className={navItemContainer}>
+              <HashLink smooth to="/#">
+                <Button sx={{ color: "whitesmoke" }}>Home</Button>
+              </HashLink>
+              <HashLink smooth to="/#AboutMe">
+                <Button sx={{ color: "whitesmoke" }}>About</Button>
+              </HashLink>
+              <HashLink smooth to="/#MySkills">
+                <Button sx={{ color: "whitesmoke" }}>Skills</Button>
+              </HashLink>
+              <HashLink smooth to="/#Projects">
+                <Button sx={{ color: "whitesmoke" }}>Projects</Button>
+              </HashLink>
+              <HashLink smooth to="/#contact">
+                <Button sx={{ color: "whitesmoke" }}>Contact</Button>
+              </HashLink>
+              <a href={Yeasaleh_Resume} download="yeasaleh_resume.pdf">
+                <Button style={{ color: "white", background: "#00CF5D", marginLeft:"10px" }}>
+                  Download Resume
+                </Button>
+              </a>
+            </Box>
+          </Toolbar>
+        </AppBar>
+      </Box>
+      {/* use drawer */}
+      <div>
+        <React.Fragment>
+          <Drawer
+            open={state}
+            onClose={() => setState(false)}
+          >
+            {list}
+          </Drawer>
+        </React.Fragment>
+      </div>
+    </Box>
+  );
 };
 
 export default Header;

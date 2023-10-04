@@ -4,148 +4,53 @@
     "index": 0,
     "picture": "https://i.ibb.co/ZH8C9cc/Screenshot-14.png",
     "name": "Roktokonika",
-    "tecnology": "React , React Router , Node.js, Firebase, Express.js, Mongodb, Metarial-Ui, React Hook Form",
-    "liveLink" : "https://roktokonika-e8bd3.web.app/",
-    "clientLink" : "https://github.com/yeasaleh2002/Roktokonika",
-    "serverLink" : "https://github.com/yeasaleh2002/Roktokonika-back-end",
-    "about": "Roktokonika is a volunteer type website.\r\n"
+    "tecnology": "React, Metarial-Ui, Firebase, Node.js, Express.js, MongoDB",
+    "liveLink": "https://roktokonika-e8bd3.web.app/",
+    "clientLink": "https://github.com/yeasaleh2002/Roktokonika",
+    "serverLink": "https://github.com/yeasaleh2002/Roktokonika-back-end",
+    "about": "A volunteer website.\r\n"
   },
-  
   {
     "_id": "614f607bd8peofnd2cb0e91af7a65",
     "index": 1,
     "picture": "https://i.ibb.co/VtgNynM/Screenshot-10.png",
-    "name": "TalkWeb(Team Project)",
-    "tecnology": "React , React Router , Node.js, Firebase, Express.js, Mongodb, React Bootstrap, React Hook Form, Redux",
-    "liveLink" : "https://talkweb-blog.web.app/",
-    "clientLink" : "https://github.com/yeasaleh2002/talkweb-client",
-    "serverLink" : "https://github.com/yeasaleh2002/talkweb-server",
-    "about": "Talkweb is a bloging website.\r\n"
+    "name": "TalkWeb (Team Project)",
+    "tecnology": "React, Firebase, Node.js, Express.js, MongoDB, React Bootstrap, Redux",
+    "liveLink": "https://talkweb-blog.web.app/",
+    "clientLink": "https://github.com/yeasaleh2002/talkweb-client",
+    "serverLink": "https://github.com/yeasaleh2002/talkweb-server",
+    "about": "A bloging website.\r\n"
   },
- 
   {
     "_id": "614f607be689bf6a13ab8e6b",
     "index": 2,
     "picture": "https://i.ibb.co/Bs0MNnp/Screenshot-215.png",
     "name": "Motoz",
-    "tecnology": "React , React Router , Node.js, Firebase, Express.js, Mongodb, Metarial-Ui, React Hook Form",
-    "liveLink" : "https://motoz-32b22.web.app/",
-    "clientLink" : "https://github.com/programming-hero-web-course-4/niche-website-client-side-yeasaleh2002",
-    "serverLink" : "https://github.com/programming-hero-web-course-4/niche-website-server-side-yeasaleh2002",
-    "about": "Motoz is an online bike shop.\r\n"
+    "tecnology": "React, Metarial-Ui, Firebase, Node.js, Express.js, MongoDB",
+    "liveLink": "https://motoz-32b22.web.app/",
+    "clientLink": "https://github.com/programming-hero-web-course-4/niche-website-client-side-yeasaleh2002",
+    "serverLink": "https://github.com/programming-hero-web-course-4/niche-website-server-side-yeasaleh2002",
+    "about": "An online bike shop.\r\n"
   },
   {
     "_id": "614f607bd8d2cb0e91af7a65",
     "index": 3,
     "picture": "https://i.ibb.co/bFckLqS/Screenshot-214.png",
     "name": "Tourism Lover",
-    "tecnology": "React , React Router , Node.js, Firebase, Express.js, Mongodb, React Bootstrap, React Hook Form",
-    "liveLink" : "https://tourism-lover.web.app/",
-    "clientLink" : "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-yeasaleh2002",
-    "serverLink" : "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-yeasaleh2002",
-    "about": "Tourism lover is a tourist booking website.\r\n"
+    "tecnology": "React, React Bootstrap, React Router, Node.js, Firebase, Express.js, MongoDB",
+    "liveLink": "https://tourism-lover.web.app/",
+    "clientLink": "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-yeasaleh2002",
+    "serverLink": "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-yeasaleh2002",
+    "about": "Tourist booking website.\r\n"
   },
   {
     "_id": "614f607bf1fcae172ebcaadb",
     "index": 4,
     "picture": "https://i.ibb.co/LnwzdGf/Screenshot-213.png",
     "name": "Medical Care",
-    "tecnology": "React , React Router , Firebase, React Bootstrap , React Hook Form",
-    "liveLink" : "https://fir-login-project-d515f.web.app/",
-    "clientLink" : "https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-yeasaleh2002",
-    "about": "This website is made for a medical clinic.\r\n"
-  },
- 
-  {
-    "_id": "614f607b4bd54a74d8fdf6c1",
-    "index": 5,
-    "picture": "https://i.ibb.co/Ry206YN/Screenshot-212.png",
-    "name": "Code Knowledge",
-    "tecnology": " React , React Router , React Bootstrap, Css",
-    "liveLink" : "https://code-knowledge.netlify.app/",
-    "clientLink" : "https://github.com/ProgrammingHeroWC4/review-website-yeasaleh2002",
-    "about": "Code Knowledge online teaching Website.\r\n"
-  },
-  {
-    "_id": "614f607bfd7a19a91675348a",
-    "index": 6,
-    "picture": "https://i.ibb.co/vX2ydKZ/Screenshot-217.png",
-    "name": "Roktokonika Volunteer",
-    "tecnology": "html , css , bootstrap , React",
-    "liveLink" : "https://roktokonika.netlify.app/",
-    "clientLink" : "https://github.com/ProgrammingHeroWC4/the-superhero-direction-yeasaleh2002",
-    "about": "The project is create to find volunteers for good social work.\r\n"
-  },
-  
-  {
-    "_id": "614f607bd8d2cb0e91af7a65543",
-    "index": 7,
-    "picture": "https://i.ibb.co/MRw6Hjr/Screenshot-242.png",
-    "name": "Inspiron Shop",
-    "tecnology": "html , css , bootstrap , JavaScript",
-    "liveLink" : "https://inspironshop.netlify.app/",
-    "clientLink" : "https://github.com/Programming-Hero-Web-Course4/ranga-store-fix-yeasaleh2002",
-    "about": "Inspiron is a online shop.\r\n"
-  },
-  {
-    "_id": "614f607bf1fcae172ebcaadb43",
-    "index": 8,
-    "picture": "https://i.ibb.co/VYvSC7K/Screenshot-247.png",
-    "name": "Book Archive",
-    "tecnology": "html , css , bootstrap , JavaScript",
-    "liveLink" : "https://book-assignment-six.netlify.app/",
-    "clientLink" : "https://github.com/Programming-Hero-Web-Course4/book-archive-yeasaleh2002",
-    "about": "Book Archeive is a booking list website.\r\n"
-  },
- 
-  {
-    "_id": "614f607b4bd54a74d8fdf6c15345",
-    "index": 9,
-    "picture": "https://i.ibb.co/y6PDYsR/Screenshot-246.png",
-    "name": "Macbook Pro",
-    "tecnology": "html , css , bootstrap , JavaScript",
-    "liveLink" : "https://macbookproassignment5.netlify.app/",
-    "clientLink" : "https://github.com/programming-hero-web-course2/mac-book-pro-yeasaleh2002",
-    "about": "This website only for macbook shop.\r\n"
-  },
-  {
-    "_id": "614f607bfd7a19a91675348a232",
-    "index": 10,
-    "picture": "https://i.ibb.co/HtdqC4T/Screenshot-245.png",
-    "name": "Honda Bike Cbr",
-    "tecnology": "html, css , bootstrap",
-    "liveLink" : "https://hondabike-cbr-assignment.netlify.app/",
-    "clientLink" : "https://github.com/programming-hero-web-course2/honda-cbr-bootstrap-assignment-yeasaleh2002",
-    "about": "Honda Bike Cbr is a Responsive Landing.\r\n"
-  },
-  {
-    "_id": "614f607be689bf6a13ab8e6b8685",
-    "index": 11,
-    "picture": "https://i.ibb.co/pxf7XBk/Screenshot-272.png",
-    "name": "Responsive Football",
-    "tecnology": "html , css",
-    "liveLink" : "https://yeasaleh2002.github.io/Responsive-football/index.html",
-    "clientLink" : "https://github.com/yeasaleh2002/Responsive-football",
-    "about": "It is a Reponsive Football Data Website.\r\n"
-  },
-  {
-    "_id": "614f607be689bf6a13ab8e6b6456",
-    "index": 12,
-    "picture": "https://i.ibb.co/4YzqCzf/Screenshot-243.png",
-    "name": "Doctors Portal",
-    "tecnology": "html, css , bootstrap",
-    "liveLink" : "https://yeasaleh2002.github.io/doctorPortal/index.html",
-    "clientLink" : "https://github.com/yeasaleh2002/doctorPortal",
-    "about": "Doctor Portal is a Simple doctors list web page. \r\n"
-  },
-  {
-    "_id": "614f607bd8d2cb0e91af7a656456",
-    "index": 13,
-    "picture": "https://i.ibb.co/Jq76YYg/1st.png",
-    "name": "Food Network",
-    "tecnology": "html, css",
-    "liveLink" : "https://yeasaleh2002.github.io/food-network-assigment/index.html",
-    "clientLink" : "https://github.com/yeasaleh2002/food-network-assigment",
-    "about": "Food network is a landing page created on html,css.\r\n"
+    "tecnology": "React, React Router, Firebase, React Bootstrap, React Hook Form",
+    "liveLink": "https://fir-login-project-d515f.web.app/",
+    "clientLink": "https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-yeasaleh2002",
+    "about": "A medical clinic.\r\n"
   }
 ]

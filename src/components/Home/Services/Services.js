@@ -1,134 +1,178 @@
-import { CardContent, CardMedia, Container, Grid, Paper, Typography } from '@mui/material';
-import React, { useEffect } from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import './Services.css';
+import React, { useState } from 'react';
+import { Box, Container, Grid, Tab, Tabs, Typography, useMediaQuery, useTheme } from '@mui/material';
+import react from "../../images/react.png";
+import mui from "../../images/mui.png";
+import graphql from "../../images/graphql.png";
+import aws from "../../images/aws.png";
+import nodeJS from "../../images/nodeJS.png";
+import expressJS from "../../images/expressJS.png";
+import mongodb from "../../images/mongodb.png";
+import firebase from "../../images/firebase.png";
+import JWT from "../../images/JWT.png";
+import heroku from "../../images/heroku.png";
+import jira from "../../images/jira.png";
+import terllo from "../../images/terllo.png";
+import bitBucket from "../../images/bitBucket.png";
+import zoho from "../../images/zoho.png";
+import JS from "../../images/JS.png";
+import TS from "../../images/TS.png";
+import C from "../../images/C.png";
+import PropTypes from 'prop-types';
+
+function CustomTabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 2 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+CustomTabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
+
 
 const Services = () => {
+  const [value, setValue] = useState(0);
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
 
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
-  useEffect(() => {
-    Aos.init({ duration: 2000 })
- }, []);
-
-    return (
-      <div style={{background: '#B1A296', padding: '1px'}}>
-        <Container sx={{my: 8}}> 
-        <Typography sx={{my: 5, color: 'cyan', fontWeight: 'bold'}} variant="h3">Services</Typography>
-                    
-            <Grid container spacing={3}>
-               
-              <Grid  data-aos="fade-up" item xs={12} sm={6} md={4}>
-                <Paper className='services' elevation={3} sx={{py: 1, borderLeft: " 6px solid #F40BE5", paddingLeft: "10px", paddingRight: "6px"} }>
-                
-                
-                        <CardMedia
-                            component="img"
-                            data-aos="zoom-in-up"
-                            style={{ width: '100%', height: '100%', margin: '0 auto' }}
-                             src="https://i.ibb.co/dW079mm/images-10.jpg"
-                            alt="green iguana"
-                        />
-
-                        <CardContent>
-                        <Typography sx={{color: 'info.main', fontWeight: 'bold'}} variant="h5" gutterBottom component="div">
-                        WEB DEVELOPMENT
-                        </Typography>
-                    
-                       
-                        <Typography variant="caption" display="block" gutterBottom >
-                         Web development is the work involved in developing a website for the Internet or an internet. Web development can range from developing a simple single static page of plain text to complex web applications, businesses, and social network services. 
-                        </Typography>
-
-                                        
-                        </CardContent>
-        
-                </Paper>  
-            </Grid>
-              <Grid data-aos="fade-down" item xs={12} sm={6} md={4}>
-                <Paper className='services' elevation={3} sx={{py: 1, borderLeft: " 6px solid #08F9F0", paddingLeft: "10px", paddingRight: "6px"}}>
-                
-                        <CardMedia
-                            component="img"
-                            data-aos="zoom-in-up"
-                            style={{ width: '100%', height: '100%', margin: '0 auto' }}
-                             src='https://i.ibb.co/Fmbnj9p/service-card-Bug.jpg'
-                            alt="green iguana"
-                        />
-
-                        <CardContent>
-                        <Typography sx={{color: 'info.main', fontWeight: 'bold'}} variant="h5" gutterBottom component="div">
-                        BUG FIXING
-                        </Typography>
-                    
-                        <Typography variant="caption" display="block" gutterBottom >
-                        A patch is a set of changes to a computer program or its supporting data designed to update, fix, or improve it. This includes fixing security vulnerabilities and other bugs, with such patches usually being called bugfixes or bug fixes.
-
-                        </Typography>
-
-                                        
-                        </CardContent>
-        
-                </Paper>  
-            </Grid>
-              <Grid data-aos="fade-right" item xs={12} sm={6} md={4}>
-                <Paper className='services' elevation={3} sx={{py: 1, borderLeft: " 6px solid #44F908", paddingLeft: "10px", paddingRight: "6px"}}>
-                
-                        <CardMedia
-                            component="img"
-                            data-aos="zoom-in-down"
-                            style={{ width: '100%', height: '100%', margin: '0 auto' }}
-                             src="https://i.ibb.co/s21kv9W/psychology-web-design-00-lead.jpg"
-                            alt="green iguana"
-                        />
-
-
-
-                        <CardContent>
-                        <Typography sx={{color: 'info.main', fontWeight: 'bold'}} variant="h5" gutterBottom component="div">
-                        RESPONSIVE DESIGN
-                        </Typography>
-                    
-                    
-                        <Typography variant="caption" display="block" gutterBottom >
-                        Responsive web design or responsive design is an approach to web design that aims to make web pages render well on a variety of devices and window or screen sizes from minimum to maximum display size to ensure usability and satisfaction. 
-                        </Typography>
-
-                                        
-                        </CardContent>
-        
-                </Paper>  
-            </Grid>
-              <Grid data-aos="fade-left" item xs={12} sm={6} md={4}>
-                <Paper className='services'  elevation={3} sx={{py: 1, borderLeft: " 6px solid #F14715", paddingLeft: "10px", paddingRight: "6px"}}>
-                
-                        <CardMedia
-                            component="img"
-                            data-aos="zoom-in-down"
-                            style={{ width: '100%', height: '100%', margin: '0 auto' }}
-                             src='https://i.ibb.co/qWLsVmS/images-11-1.jpg'
-                            alt="green iguana"
-                        />
-
-                        <CardContent>
-                        <Typography sx={{color: 'info.main', fontWeight: 'bold'}} variant="h5" gutterBottom component="div">
-                             WEB DESIGN
-                        </Typography>
-                  
-                        <Typography variant="caption" display="block" gutterBottom >
-                        Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design; authoring, including standardised code and proprietary software.
-                        </Typography>
-
-                                        
-                        </CardContent>
-        
-                </Paper>  
-            </Grid>
-
-            </Grid>
+  return (
+    <div style={{ background: '#111A28' }}>
+      <Container sx={{ my: 10 }}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} md={1.5}>
+            {!matches && (
+              <Box >
+                <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", transform: `rotate(270deg)`, marginLeft: "-100px", width: "260px", mt: 10 }}>
+                  <Box sx={{ backgroundColor: "#1D293A", p: 1, borderRadius: "2px" }}>
+                    <Typography sx={{ color: "whitesmoke", fontSize: matches ? "12px" : "18px", textAlign: !matches && "center", fontWeight: "bold" }}>MY SKILLS</Typography>
+                  </Box>
+                  <Box><hr style={{ width: "80px" }} /></Box>
+                </Box>
+              </Box>
+            )}
+            {matches && (
+              <Box>
+                <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <Box><hr style={{ width: "60px" }} /></Box>
+                  <Box sx={{ backgroundColor: "#1D293A", p: 0.6, borderRadius: "2px" }}>
+                    <Typography sx={{ color: "whitesmoke", fontSize: matches ? "12px" : "18px", textAlign: !matches && "center", fontWeight: "bold" }}>MY SKILLS</Typography>
+                  </Box>
+                  <Box><hr style={{ width: "60px" }} /></Box>
+                </Box>
+              </Box>
+            )}
+          </Grid>
+          {console.log("value", value)}
+          <Grid item xs={12} sm={12} md={10.5}>
+            <Box sx={{ marginLeft: !matches && "-28px" }}>
+              <Tabs value={value} onChange={handleChange} indicatorColor="none" variant="scrollable" scrollButtons="auto">
+                <Tab label="Web" {...a11yProps(0)} style={{ fontSize: '16px', color: 'whitesmoke', borderRadius:"6px", backgroundColor: value === 0 ? "#00CF5D" : "", fontWeight: value === 0 ? 800 : 500, border: value === 0 ? "" : "2px solid #00CF5D", padding:"0px 25px" }} />
+                <Tab label="Programming" {...a11yProps(1)} style={{ fontSize: '16px', color: 'whitesmoke', borderRadius:"6px", backgroundColor: value === 1 ? "#00CF5D" : "", fontWeight: value === 1 ? 800 : 500, border: value === 1 ? "" : "2px solid #00CF5D", padding:"0px 25px", marginLeft: "12px", marginRight: "12px" }}  />
+                <Tab label="Tools" {...a11yProps(2)} style={{ fontSize: '16px', color: 'whitesmoke', borderRadius:"6px", backgroundColor: value === 2 ? "#00CF5D" : "", fontWeight: value === 2 ? 800 : 500, border: value === 2 ? "" : "2px solid #00CF5D", padding:"0px 25px" }}  />
+              </Tabs>
+            </Box>
+            <Box sx={{ marginLeft: !matches && "-45px" }}>
+              <CustomTabPanel value={value} index={0} >
+                <Grid container spacing={2}>
+                  {webDev?.map((web) => (
+                    <Grid item xs={6} sm={3} md={2.4}>
+                      <Box key={web?.id} sx={skillsMainBox}>
+                        <img src={web?.image} alt={web?.name} style={{ width: "75px", height: "75px" }} />
+                        <Typography sx={{ color: "whitesmoke", fontSize: matches ? "18px" : "26px", fontWeight: 800, mt: 1 }}>{web?.name}</Typography>
+                      </Box>
+                    </Grid>
+                  ))}
+                </Grid>
+              </CustomTabPanel>
+              <CustomTabPanel value={value} index={1} >
+                <Grid container spacing={2}>
+                  {Programming?.map((web) => (
+                    <Grid item xs={6} sm={3} md={2.4}>
+                      <Box key={web?.id} sx={skillsMainBox}>
+                        <img src={web?.image} alt={web?.name} style={{ width: "75px", height: "75px" }} />
+                        <Typography sx={{ color: "whitesmoke", fontSize: matches ? "18px" : "26px", fontWeight: 800, mt: 1 }}>{web?.name}</Typography>
+                      </Box>
+                    </Grid>
+                  ))}
+                </Grid>
+              </CustomTabPanel>
+              <CustomTabPanel value={value} index={2} >
+                <Grid container spacing={2}>
+                  {tools?.map((web) => (
+                    <Grid item xs={6} sm={3} md={2.4}>
+                      <Box key={web?.id} sx={skillsMainBox}>
+                        <img src={web?.image} alt={web?.name} style={{ width: "75px", height: "75px" }} />
+                        <Typography sx={{ color: "whitesmoke", fontSize: matches ? "18px" : "26px", fontWeight: 800, mt: 1 }}>{web?.name}</Typography>
+                      </Box>
+                    </Grid>
+                  ))}
+                </Grid>
+              </CustomTabPanel>
+            </Box>
+          </Grid>
+        </Grid>
       </Container>
-      </div>
-    );
+    </div>
+  );
 };
 
 export default Services;
+
+const webDev = [
+  { id: 1, name: "React", image: react },
+  { id: 2, name: "Material-Ui", image: mui },
+  { id: 3, name: "GraphQL", image: graphql },
+  { id: 4, name: "AWS", image: aws },
+  { id: 5, name: "Node.js", image: nodeJS },
+  { id: 6, name: "Express.js", image: expressJS },
+  { id: 7, name: "MongoDB", image: mongodb },
+];
+
+const tools = [
+  { id: 1, name: "Firebase", image: firebase },
+  { id: 2, name: "JWT Token", image: JWT },
+  { id: 3, name: "Heroku", image: heroku },
+  { id: 4, name: "Jira", image: jira },
+  { id: 5, name: "Trello", image: terllo },
+  { id: 6, name: "Bitbucket", image: bitBucket },
+  { id: 7, name: "Zoho Desk", image: zoho },
+];
+
+const Programming = [
+  { id: 1, name: "JavaScript", image: JS },
+  { id: 2, name: "TypeScript", image: TS },
+  { id: 3, name: "C", image: C }
+];
+
+const skillsMainBox = {
+  backgroundColor: "#1D293A",
+  padding: "35px 25px",
+  borderRadius: "6px"
+}
