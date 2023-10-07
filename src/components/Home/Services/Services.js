@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Box, Container, Grid, Tab, Tabs, Typography, useMediaQuery, useTheme } from '@mui/material';
 import react from "../../images/react.png";
 import mui from "../../images/mui.png";
+import redux from "../../images/redux.png";
 import graphql from "../../images/graphql.png";
 import aws from "../../images/aws.png";
 import nodeJS from "../../images/nodeJS.png";
@@ -17,6 +18,8 @@ import zoho from "../../images/zoho.png";
 import JS from "../../images/JS.png";
 import TS from "../../images/TS.png";
 import C from "../../images/C.png";
+import tailwind from "../../images/tailwind.png";
+import vite from "../../images/vite,.png";
 import PropTypes from 'prop-types';
 
 function CustomTabPanel(props) {
@@ -147,12 +150,14 @@ export default Services;
 
 const webDev = [
   { id: 1, name: "React", image: react },
-  { id: 2, name: "Material-Ui", image: mui },
-  { id: 3, name: "GraphQL", image: graphql },
-  { id: 4, name: "AWS", image: aws },
-  { id: 5, name: "Node.js", image: nodeJS },
-  { id: 6, name: "Express.js", image: expressJS },
-  { id: 7, name: "MongoDB", image: mongodb },
+  { id: 2, name: "Redux", image: redux },
+  { id: 3, name: "Material-Ui", image: mui },
+  { id: 4, name: "GraphQL", image: graphql },
+  { id: 5, name: "AWS", image: aws },
+  { id: 6, name: "Node.js", image: nodeJS },
+  { id: 7, name: "Express.js", image: expressJS },
+  { id: 8, name: "MongoDB", image: mongodb },
+  { id: 9, name: "Tailwind", image: tailwind },
 ];
 
 const tools = [
@@ -163,6 +168,7 @@ const tools = [
   { id: 5, name: "Trello", image: terllo },
   { id: 6, name: "Bitbucket", image: bitBucket },
   { id: 7, name: "Zoho Desk", image: zoho },
+  { id: 7, name: "Vite.js", image: vite },
 ];
 
 const Programming = [
