@@ -21,6 +21,8 @@ import C from "../../images/C.png";
 import tailwind from "../../images/tailwind.png";
 import vite from "../../images/vite,.png";
 import PropTypes from 'prop-types';
+import nextjs from "../../images/nextJs.png";
+import antDesign from "../../images/antDesign.png";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -149,15 +151,17 @@ const Services = () => {
 export default Services;
 
 const webDev = [
-  { id: 1, name: "React", image: react },
+  { id: 1, name: "React.js", image: react },
   { id: 2, name: "Redux", image: redux },
-  { id: 3, name: "Material-Ui", image: mui },
-  { id: 4, name: "GraphQL", image: graphql },
-  { id: 5, name: "AWS", image: aws },
-  { id: 6, name: "Node.js", image: nodeJS },
-  { id: 7, name: "Express.js", image: expressJS },
-  { id: 8, name: "MongoDB", image: mongodb },
-  { id: 9, name: "Tailwind", image: tailwind },
+  { id: 3, name: "Next.js", image: nextjs },
+  { id: 4, name: "Material-Ui", image: mui },
+  { id: 5, name: "GraphQL", image: graphql },
+  { id: 6, name: "AWS", image: aws },
+  { id: 7, name: "Node.js", image: nodeJS },
+  { id: 8, name: "Express.js", image: expressJS },
+  { id: 9, name: "MongoDB", image: mongodb },
+  { id: 10, name: "Tailwind", image: tailwind },
+  { id: 11, name: "Ant Design", image: antDesign },
 ];
 
 const tools = [
