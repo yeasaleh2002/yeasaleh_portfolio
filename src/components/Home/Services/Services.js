@@ -16,7 +16,7 @@ import terllo from "../../images/terllo.png";
 import bitBucket from "../../images/bitBucket.png";
 import zoho from "../../images/zoho.png";
 import JS from "../../images/JS.png";
-import TS from "../../images/TS.png";
+// import TS from "../../images/TS.png";
 import C from "../../images/C.png";
 import tailwind from "../../images/tailwind.png";
 import vite from "../../images/vite,.png";
@@ -177,7 +177,7 @@ const tools = [
 
 const Programming = [
   { id: 1, name: "JavaScript", image: JS },
-  { id: 2, name: "TypeScript", image: TS },
+  // { id: 2, name: "TypeScript", image: TS },
   { id: 3, name: "C", image: C }
 ];
 
