@@ -1,16 +1,45 @@
-.projects:hover{
-    transition: .9s;
-    box-shadow: 5px 10px 5px black;
-    border-radius: 10px;
-    background-color: pink;
-    color: rgb(44, 40, 40);
+.project-card {
+  transition: all 0.3s ease;
 }
 
-/* 
-https://i.ibb.co/VtgNynM/Screenshot-10.png
-https://i.ibb.co/3vccJZ8/Screenshot-11.png
-https://i.ibb.co/7SMtJLV/Screenshot-12.png
-https://i.ibb.co/4NRdFFD/Screenshot-13.png
-https://i.ibb.co/ZH8C9cc/Screenshot-14.png
-https://i.ibb.co/ThJ77Cv/Screenshot-15.png
-*/
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.tech-chip {
+  transition: all 0.3s ease;
+}
+
+.tech-chip:hover {
+  transform: scale(1.05);
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-description {
+  margin-bottom: 20px;
+}
+
+.project-description ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-description li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.project-description li::before {
+  content: "•";
+  color: #00CF5D;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}

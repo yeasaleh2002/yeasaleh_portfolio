@@ -3,6 +3,7 @@ import { Box, Container, Grid, Tab, Tabs, Typography, useMediaQuery, useTheme } 
 import react from "../../images/react.png";
 import mui from "../../images/mui.png";
 import redux from "../../images/redux.png";
+import vitest from "../../images/vitest.svg";
 import graphql from "../../images/graphql.png";
 import aws from "../../images/aws.png";
 import nodeJS from "../../images/nodeJS.png";
@@ -16,13 +17,31 @@ import terllo from "../../images/terllo.png";
 import bitBucket from "../../images/bitBucket.png";
 import zoho from "../../images/zoho.png";
 import JS from "../../images/JS.png";
-// import TS from "../../images/TS.png";
+import TS from "../../images/TS.png";
 import C from "../../images/C.png";
 import tailwind from "../../images/tailwind.png";
 import vite from "../../images/vite,.png";
 import PropTypes from 'prop-types';
 import nextjs from "../../images/nextJs.png";
 import antDesign from "../../images/antDesign.png";
+import sql from "../../images/sql.png";
+import PostgreSQL from "../../images/postgres.png";
+import prisma from "../../images/prisma.png";
+import mysql from "../../images/mysql.png";
+import restapi from "../../images/restapi.svg";
+import supabase from "../../images/supabase.jpeg";
+import webpack from "../../images/webpack.png";
+import babel from "../../images/babel.png";
+import jenkins from "../../images/jenkins.png";
+import firecrawel from "../../images/firecrawel.jpeg";
+import getstream from "../../images/getstream.jpeg";
+import mailerlite from "../../images/mailerlite.png";
+import stripe from "../../images/stripe.jpeg";
+import LemonSqueezy from "../../images/lemon.jpeg";
+import paytm from "../../images/pytm.png";
+import weweb from "../../images/weweb.jpeg";
+import make from "../../images/make.png";
+import Pipedrive from "../../images/pipedrive.png";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -94,21 +113,30 @@ const Services = () => {
               </Box>
             )}
           </Grid>
-          {console.log("value", value)}
+          {/* {console.log("value", value)} */}
           <Grid item xs={12} sm={12} md={10.5}>
             <Box sx={{ marginLeft: !matches && "-28px" }}>
               <Tabs value={value} onChange={handleChange} indicatorColor="none" variant="scrollable" scrollButtons="auto">
-                <Tab label="Web" {...a11yProps(0)} style={{ fontSize: '16px', color: 'whitesmoke', borderRadius:"6px", backgroundColor: value === 0 ? "#00CF5D" : "", fontWeight: value === 0 ? 800 : 500, border: value === 0 ? "" : "2px solid #00CF5D", padding:"0px 25px" }} />
-                <Tab label="Programming" {...a11yProps(1)} style={{ fontSize: '16px', color: 'whitesmoke', borderRadius:"6px", backgroundColor: value === 1 ? "#00CF5D" : "", fontWeight: value === 1 ? 800 : 500, border: value === 1 ? "" : "2px solid #00CF5D", padding:"0px 25px", marginLeft: "12px", marginRight: "12px" }}  />
+                <Tab label="Front-End" {...a11yProps(0)} style={{ fontSize: '16px', color: 'whitesmoke', borderRadius:"6px", backgroundColor: value === 0 ? "#00CF5D" : "", fontWeight: value === 0 ? 800 : 500, border: value === 0 ? "" : "2px solid #00CF5D", padding:"0px 25px" }} />
+                <Tab label="Back-End" {...a11yProps(1)} style={{ fontSize: '16px', color: 'whitesmoke', borderRadius:"6px", backgroundColor: value === 1 ? "#00CF5D" : "", fontWeight: value === 1 ? 800 : 500, border: value === 1 ? "" : "2px solid #00CF5D", padding:"0px 25px", marginLeft: "12px", marginRight: "12px" }}  />
                 <Tab label="Tools" {...a11yProps(2)} style={{ fontSize: '16px', color: 'whitesmoke', borderRadius:"6px", backgroundColor: value === 2 ? "#00CF5D" : "", fontWeight: value === 2 ? 800 : 500, border: value === 2 ? "" : "2px solid #00CF5D", padding:"0px 25px" }}  />
               </Tabs>
             </Box>
             <Box sx={{ marginLeft: !matches && "-45px" }}>
               <CustomTabPanel value={value} index={0} >
-                <Grid container spacing={2}>
-                  {webDev?.map((web) => (
-                    <Grid item xs={6} sm={3} md={2.4}>
-                      <Box key={web?.id} sx={skillsMainBox}>
+                <Grid container spacing={3}>
+                  {frontEnd?.map((web) => (
+                    <Grid item xs={6} sm={4} md={3} key={web?.id}>
+                      <Box sx={{
+                        ...skillsMainBox,
+                        transition: "all 0.3s ease",
+                        '&:hover': {
+                          transform: 'translateY(-5px)',
+                          boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
+                          borderColor: "#00CF5D"
+                        },
+                        border: "1px solid #2A3747"
+                      }}>
                         <img src={web?.image} alt={web?.name} style={{ width: "75px", height: "75px" }} />
                         <Typography sx={{ color: "whitesmoke", fontSize: matches ? "18px" : "26px", fontWeight: 800, mt: 1 }}>{web?.name}</Typography>
                       </Box>
@@ -117,10 +145,19 @@ const Services = () => {
                 </Grid>
               </CustomTabPanel>
               <CustomTabPanel value={value} index={1} >
-                <Grid container spacing={2}>
-                  {Programming?.map((web) => (
-                    <Grid item xs={6} sm={3} md={2.4}>
-                      <Box key={web?.id} sx={skillsMainBox}>
+                <Grid container spacing={3}>
+                  {backEnd?.map((web) => (
+                    <Grid item xs={6} sm={4} md={3} key={web?.id}>
+                      <Box sx={{
+                        ...skillsMainBox,
+                        transition: "all 0.3s ease",
+                        '&:hover': {
+                          transform: 'translateY(-5px)',
+                          boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
+                          borderColor: "#00CF5D"
+                        },
+                        border: "1px solid #2A3747"
+                      }}>
                         <img src={web?.image} alt={web?.name} style={{ width: "75px", height: "75px" }} />
                         <Typography sx={{ color: "whitesmoke", fontSize: matches ? "18px" : "26px", fontWeight: 800, mt: 1 }}>{web?.name}</Typography>
                       </Box>
@@ -129,10 +166,19 @@ const Services = () => {
                 </Grid>
               </CustomTabPanel>
               <CustomTabPanel value={value} index={2} >
-                <Grid container spacing={2}>
+                <Grid container spacing={3}>
                   {tools?.map((web) => (
-                    <Grid item xs={6} sm={3} md={2.4}>
-                      <Box key={web?.id} sx={skillsMainBox}>
+                    <Grid item xs={6} sm={4} md={3} key={web?.id}>
+                      <Box sx={{
+                        ...skillsMainBox,
+                        transition: "all 0.3s ease",
+                        '&:hover': {
+                          transform: 'translateY(-5px)',
+                          boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
+                          borderColor: "#00CF5D"
+                        },
+                        border: "1px solid #2A3747"
+                      }}>
                         <img src={web?.image} alt={web?.name} style={{ width: "75px", height: "75px" }} />
                         <Typography sx={{ color: "whitesmoke", fontSize: matches ? "18px" : "26px", fontWeight: 800, mt: 1 }}>{web?.name}</Typography>
                       </Box>
@@ -150,35 +196,55 @@ const Services = () => {
 
 export default Services;
 
-const webDev = [
-  { id: 1, name: "React.js", image: react },
-  { id: 2, name: "Redux", image: redux },
-  { id: 3, name: "Next.js", image: nextjs },
-  { id: 4, name: "Material-Ui", image: mui },
-  { id: 5, name: "GraphQL", image: graphql },
-  { id: 6, name: "AWS", image: aws },
-  { id: 7, name: "Node.js", image: nodeJS },
-  { id: 8, name: "Express.js", image: expressJS },
-  { id: 9, name: "MongoDB", image: mongodb },
-  { id: 10, name: "Tailwind", image: tailwind },
-  { id: 11, name: "Ant Design", image: antDesign },
+const frontEnd = [
+  { id: 1, name: "JavaScript", image: JS },
+  { id: 2, name: "TypeScript", image: TS },
+  { id: 3, name: "React.js", image: react },
+  { id: 4, name: "Next.js", image: nextjs },
+  { id: 5, name: "Redux Toolkit", image: redux },
+  { id: 6, name: "Tailwind CSS", image: tailwind },
+  { id: 7, name: "Material-Ui", image: mui },
+  { id: 8, name: "Ant Design", image: antDesign },
+  { id: 9, name: "Vitest", image: vitest }, // Using JS image as placeholder
+];
+
+const backEnd = [
+  { id: 1, name: "Node.js", image: nodeJS },
+  { id: 2, name: "Express.js", image: expressJS },
+  { id: 3, name: "SQL", image: sql }, // Using JS image as placeholder
+  { id: 4, name: "PostgreSQL", image: PostgreSQL }, // Using JS image as placeholder
+  { id: 5, name: "Prisma", image: prisma }, // Using JS image as placeholder
+  { id: 6, name: "MySQL", image: mysql }, // Using JS image as placeholder
+  { id: 7, name: "REST API", image: restapi }, // Using JS image as placeholder
+  { id: 8, name: "AWS", image: aws },
+  { id: 9, name: "GraphQL", image: graphql },
+  { id: 10, name: "Supabase", image: supabase }, // Using JS image as placeholder
 ];
 
 const tools = [
   { id: 1, name: "Firebase", image: firebase },
-  { id: 2, name: "JWT Token", image: JWT },
-  { id: 3, name: "Heroku", image: heroku },
-  { id: 4, name: "Jira", image: jira },
-  { id: 5, name: "Trello", image: terllo },
-  { id: 6, name: "Bitbucket", image: bitBucket },
-  { id: 7, name: "Zoho Desk", image: zoho },
-  { id: 7, name: "Vite.js", image: vite },
+  { id: 2, name: "Vite", image: vite },
+  { id: 3, name: "Webpack", image: webpack }, // Using JS image as placeholder
+  { id: 4, name: "Babel", image: babel }, // Using JS image as placeholder
+  { id: 5, name: "JWT", image: JWT },
+  { id: 6, name: "Jenkins", image: jenkins }, // Using JS image as placeholder
+  { id: 7, name: "Jira", image: jira },
+  { id: 8, name: "Trello", image: terllo },
+  { id: 9, name: "Bitbucket", image: bitBucket },
+  { id: 10, name: "Zoho Desk", image: zoho },
+  { id: 11, name: "Firecrawl", image: firecrawel }, // Using JS image as placeholder
+  { id: 12, name: "Getstream.io", image: getstream }, // Using JS image as placeholder
+  { id: 13, name: "Mailerlite", image: mailerlite }, // Using JS image as placeholder
+  { id: 14, name: "Stripe", image: stripe }, // Using JS image as placeholder
+  { id: 15, name: "LemonSqueezy", image: LemonSqueezy }, // Using JS image as placeholder
+  { id: 16, name: "Paytm", image: paytm }, // Using JS image as placeholder
+  { id: 17, name: "Weweb", image: weweb }, // Using JS image as placeholder
+  { id: 18, name: "Make.com", image: make }, // Using JS image as placeholder
+  { id: 19, name: "Pipedrive", image: Pipedrive }, // Using JS image as placeholder
 ];
 
 const Programming = [
-  { id: 1, name: "JavaScript", image: JS },
-  // { id: 2, name: "TypeScript", image: TS },
-  { id: 3, name: "C", image: C }
+  { id: 1, name: "C", image: C }
 ];
 
 const skillsMainBox = {

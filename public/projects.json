@@ -1,66 +1,49 @@
 [
   {
-    "_id": "614f607be689bf6afsfasdf13adflskfsl",
+    "_id": "admissions-pal-001",
     "index": 0,
-    "picture": "https://i.ibb.co/8M7kXBt/Grocery-Heaven-landing-page.png",
-    "name": "Grocery Heaven",
-    "tecnology": "React, Metarial-Ui, MongoDB, Node JS, Express JS, Mongoose, Redux, Axios, JWT, Nodemailer",
-    "liveLink": "https://gorceryheaven.netlify.app/",
-    "clientLink": "https://github.com/yeasaleh2002/grocery-shop-frontend",
-    "about": "A Grocery Shop.\r\n"
+    "name": "Admissions Pal",
+    "tecnology": "React.js, Node.js, Express.js, MySQL, Stripe, JWT, PWA, Real-time Analytics",
+    "liveLink": "https://admissionspal.com",
+    "clientLink": "https://github.com/yeasaleh2002/admissions-pal",
+    "about": "Interactive networking platform for students, alumni, and recruiters with role-based architecture, secure payment system, and real-time analytics.",
+    "description": [
+      "Built interactive networking features that facilitate collaboration between students, alumni, and recruiters, fostering a dynamic and engaging educational community.",
+      "Designed and executed a scalable, role-based architecture to efficiently manage four distinct user flows (Admin, Student, Advisor, Recruiter), enhancing security and system performance.",
+      "Improved a secure, PCI-compliant payment system by integrating Stripe, enabling seamless subscription management and transaction processing.",
+      "Transformed the platform into a fully responsive Progressive Web App (PWA), improving offline accessibility, reducing load times, and optimizing mobile performance.",
+      "Applied real-time analytics and data-driven insights for advisors and recruiters, enhancing strategic decision-making and user engagement."
+    ]
   },
   {
-    "_id": "614f607be689bf6afsfasdf13ab8e6b",
+    "_id": "microdot-ai-002",
     "index": 1,
-    "picture": "https://i.ibb.co/ZH8C9cc/Screenshot-14.png",
-    "name": "Roktokonika",
-    "tecnology": "React, Metarial-Ui, Firebase, Node.js, Express.js, MongoDB",
-    "liveLink": "https://roktokonika-e8bd3.web.app/",
-    "clientLink": "https://github.com/yeasaleh2002/Roktokonika",
-    "serverLink": "https://github.com/yeasaleh2002/Roktokonika-back-end",
-    "about": "A volunteer website.\r\n"
+    "name": "Microdot.ai",
+    "tecnology": "React.js, Node.js, Express.js, MongoDB, AI Transcription, Google Meet, Zoom, Microsoft Teams",
+    "liveLink": "https://microdot.ai",
+    "clientLink": "https://github.com/yeasaleh2002/microdot-ai",
+    "about": "AI-powered meeting management platform with video integration, admin dashboard, user dashboard, and transcription system.",
+    "description": [
+      "Expanded a feature-rich front end for a meeting management platform, ensuring seamless integration with Google Meet, Zoom, and Microsoft Teams.",
+      "Implemented an intuitive admin dashboard to manage users, videos, prompts, and payments, enhancing operational efficiency.",
+      "Built a responsive user dashboard to display upcoming and past meetings, with features like invite management, meeting cancellations, and recording uploads.",
+      "Integrated an AI-powered transcription system that processes audio/video uploads, generates transcripts, and enables clip creation for easy content sharing.",
+      "Optimized frontend performance using React best practices, state management, and API integrations to ensure a seamless user experience."
+    ]
   },
   {
-    "_id": "614f607bd8peofnd2cb0e91af7a65",
+    "_id": "medlink-jobs-003",
     "index": 2,
-    "picture": "https://i.ibb.co/VtgNynM/Screenshot-10.png",
-    "name": "TalkWeb (Team Project)",
-    "tecnology": "React, Firebase, Node.js, Express.js, MongoDB, React Bootstrap, Redux",
-    "liveLink": "https://talkweb-blog.web.app/",
-    "clientLink": "https://github.com/yeasaleh2002/talkweb-client",
-    "serverLink": "https://github.com/yeasaleh2002/talkweb-server",
-    "about": "A bloging website.\r\n"
-  },
-  {
-    "_id": "614f607be689bf6a13ab8e6b",
-    "index": 3,
-    "picture": "https://i.ibb.co/Bs0MNnp/Screenshot-215.png",
-    "name": "Motoz",
-    "tecnology": "React, Metarial-Ui, Firebase, Node.js, Express.js, MongoDB",
-    "liveLink": "https://motoz-32b22.web.app/",
-    "clientLink": "https://github.com/programming-hero-web-course-4/niche-website-client-side-yeasaleh2002",
-    "serverLink": "https://github.com/programming-hero-web-course-4/niche-website-server-side-yeasaleh2002",
-    "about": "An online bike shop.\r\n"
-  },
-  {
-    "_id": "614f607bd8d2cb0e91af7a65",
-    "index": 4,
-    "picture": "https://i.ibb.co/bFckLqS/Screenshot-214.png",
-    "name": "Tourism Lover",
-    "tecnology": "React, React Bootstrap, React Router, Node.js, Firebase, Express.js, MongoDB",
-    "liveLink": "https://tourism-lover.web.app/",
-    "clientLink": "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-yeasaleh2002",
-    "serverLink": "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-yeasaleh2002",
-    "about": "Tourist booking website.\r\n"
-  },
-  {
-    "_id": "614f607bf1fcae172ebcaadb",
-    "index": 5,
-    "picture": "https://i.ibb.co/LnwzdGf/Screenshot-213.png",
-    "name": "Medical Care",
-    "tecnology": "React, React Router, Firebase, React Bootstrap, React Hook Form",
-    "liveLink": "https://fir-login-project-d515f.web.app/",
-    "clientLink": "https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-yeasaleh2002",
-    "about": "A medical clinic.\r\n"
+    "name": "MedLink Jobs",
+    "tecnology": "React.js, Node.js, Express.js, MongoDB, Healthcare Recruitment, Job Portal, User Management",
+    "liveLink": "https://medlinkjobs.com",
+    "clientLink": "https://github.com/yeasaleh2002/medlink-jobs",
+    "about": "India's first healthcare recruitment portal connecting professionals with top job opportunities, supporting 300,000+ registered users.",
+    "description": [
+      "Developed and enhanced MedLink Jobs, India's first healthcare recruitment portal, connecting professionals with top job opportunities.",
+      "Designed a scalable and efficient hiring platform, ensuring rapid, transparent, and cost-effective talent acquisition in the medical industry.",
+      "Enforced a user-centric experience with a secure and seamless job search interface, prioritizing data security and accessibility.",
+      "Engineered robust backend optimizations to support a thriving community of 300,000+ registered users, improving performance and scalability."
+    ]
   }
 ]

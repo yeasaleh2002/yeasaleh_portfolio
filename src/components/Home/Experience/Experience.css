@@ -1,0 +1,16 @@
+.experience-card {
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.tech-chip {
+  transition: all 0.3s ease;
+}
+
+.tech-chip:hover {
+  transform: scale(1.05);
+}

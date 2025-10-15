@@ -8,6 +8,7 @@ import './App.css';
 import About from './components/Home/About/About';
 import Contact from './components/Home/Contact/Contact';
 import Projects from './components/Home/Projects/Projects';
+import Experience from './components/Home/Experience/Experience';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
 import Home from "./components/Home/Home/Home";
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/experience">
+            <Experience />
           </Route>
           <Route path='*'>
             <NotFound></NotFound>

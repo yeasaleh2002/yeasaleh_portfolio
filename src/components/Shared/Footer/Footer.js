@@ -7,13 +7,21 @@ const Footer = () => {
   const year = currentTime.getFullYear();
 
   return (
-    <div>
-      <Box style={{ color: 'whitesmoke', background: '#1D293A', textAlign: "center" }}>
-        <Typography style={{ padding: '15px', textAlign: 'center' }}>
-          Copyright © {year} portfolio by Yeasaleh. All rights reserved.
-        </Typography>
-      </Box>
-    </div>
+    <Box sx={{ 
+      color: 'whitesmoke', 
+      background: '#1D293A', 
+      textAlign: "center",
+      mt: 0,
+      pt: 0
+    }}>
+      <Typography sx={{ 
+        padding: '15px', 
+        textAlign: 'center',
+        margin: 0
+      }}>
+        Copyright © {year} portfolio by Yeasaleh. All rights reserved.
+      </Typography>
+    </Box>
   );
 };
 

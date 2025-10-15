@@ -72,6 +72,13 @@ const Header = () => {
             </HashLink>
           </ListItemText >
         </ListItem>
+        <ListItem button >
+          <ListItemText >
+            <HashLink smooth to="/#Experience">
+              <Button sx={{ color: "whitesmoke" }} onClick={() => setState(false)}>Experience</Button>
+            </HashLink>
+          </ListItemText >
+        </ListItem>
         <Divider />
         <ListItem button >
           <ListItemText >
@@ -133,6 +140,9 @@ const Header = () => {
               </HashLink>
               <HashLink smooth to="/#MySkills">
                 <Button sx={{ color: "whitesmoke" }}>Skills</Button>
+              </HashLink>
+              <HashLink smooth to="/#Experience">
+                <Button sx={{ color: "whitesmoke" }}>Experience</Button>
               </HashLink>
               <HashLink smooth to="/#Projects">
                 <Button sx={{ color: "whitesmoke" }}>Projects</Button>

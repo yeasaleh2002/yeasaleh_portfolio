@@ -3,6 +3,7 @@ import Services from "../Services/Services";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
+import Experience from "../Experience/Experience";
 
 const Home = () => {
 
@@ -11,6 +12,9 @@ const Home = () => {
       <About />
       <section id="MySkills">
         <Services />
+      </section>
+      <section id="Experience">
+        <Experience />
       </section>
       <section id="Projects">
         <Projects />

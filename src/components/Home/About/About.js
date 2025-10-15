@@ -130,7 +130,7 @@ const About = () => {
                     textAlign: matches && "center",
                   }}
                 >
-                  Software Developer
+                  Full-Stack Developer
                 </Typography>
                 <Box
                   sx={{
@@ -295,112 +295,93 @@ const About = () => {
                   </Box>
                 </Box>
               )}
-              <Grid sx={{ p: !matches && 1 }} container spacing={2}>
-                <Grid item xs={12} md={7} order={matches ? 2 : 1}>
-                  <Box sx={{ p: 1 }}>
-                    <Typography
-                      sx={{
-                        color: "whitesmoke",
-                        fontSize: matches ? "12px" : "18px",
-                        lineHeight: !matches ? "30px" : "21px",
-                        mb: 1,
-                        textAlign: matches && "center",
-                      }}
-                    >
-                      🚀 Hello! I'm Yeasaleh, a passionate Software Developer
-                      with {years} year{years !== 1 ? "s" : ""} {months} month
-                      {months !== 1 ? "s" : ""} of professional experience in
-                      JavaScript, React.js, Next.js, and Redux. I specialize in
-                      developing responsive web applications, creating seamless
-                      user experiences, and optimizing UI performance. I have
-                      hands-on experience with state management,
-                      component-driven development, and API integrations to
-                      deliver high-quality solutions. My backend development
-                      skills include Node.js, Express.js, PostgreSQL, and MySQL,
-                      allowing me to build and manage secure and scalable web
-                      applications. I've also worked on integrating Stripe
-                      payment systems, ensuring PCI compliance and secure
-                      transactions. Proficient in tools like AWS, Firebase,
-                      Heroku, Jira, and Trello, I focus on streamlining
-                      development and deployment processes. Currently pursuing a
-                      B.Sc. in Computer Science and Engineering at City
-                      University, Bangladesh, I'm committed to advancing my
-                      expertise in full-stack development.
-                    </Typography>
-                    <Box
-                      sx={{
-                        display: matches && "flex",
-                        alignItems: matches && "center",
-                        justifyContent: matches && "center",
-                        mb: 2,
-                        mt: 1,
-                      }}
-                    >
-                      <a href={Yeasaleh_Resume} download="yeasaleh_resume.pdf">
-                        <Button
-                          style={{ color: "white", background: "#00CF5D" }}
-                        >
-                          Resume
-                        </Button>
-                      </a>
-                    </Box>
-                  </Box>
-                </Grid>
-                <Grid item xs={12} md={5} order={matches ? 1 : 2}>
-                  <Box
-                    sx={{ display: "flex", justifyContent: "space-between" }}
-                  >
+                              <Grid sx={{ p: !matches && 1 }} container spacing={4}>
+                  <Grid item xs={12} md={7} order={matches ? 2 : 1}>
                     <Box sx={{ p: 1 }}>
-                      <img
-                        style={{
-                          width: matches ? "100%" : "310px",
-                          height: matches ? "100%" : "310px",
-                          borderRadius: "6px",
+                      <Typography
+                        sx={{
+                          color: "whitesmoke",
+                          fontSize: matches ? "14px" : "18px",
+                          lineHeight: !matches ? "30px" : "21px",
+                          mb: 3,
+                          textAlign: matches && "center",
                         }}
-                        src={yeasaleh}
-                        alt="saleh"
-                      />
-                    </Box>
-                    {!matches && (
-                      <Box>
-                        <Box
-                          sx={{
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            transform: `rotate(90deg)`,
-                            marginLeft: "65px",
-                            width: "150px",
-                            mt: 6,
-                          }}
-                        >
-                          <Box
+                      >
+                        🚀 Hello! I'm Yeasaleh, a passionate Full-Stack Developer
+                        with {years} year{years !== 1 ? "s" : ""} {months} month
+                        {months !== 1 ? "s" : ""} of professional experience in
+                        JavaScript, TypeScript, React.js, Next.js, and Redux Toolkit. I specialize in
+                        developing responsive web applications, creating seamless
+                        user experiences, and optimizing UI performance. I have
+                        hands-on experience with state management,
+                        component-driven development, and API integrations to
+                        deliver high-quality solutions. My backend development
+                        skills include Node.js, Express.js, SQL, PostgreSQL, Prisma, MySQL, and GraphQL,
+                        allowing me to build and manage secure and scalable web
+                        applications. I've also worked on integrating Stripe, LemonSqueezy, and Paytm
+                        payment systems, ensuring PCI compliance and secure
+                        transactions. Proficient in tools like AWS, Firebase, Vite, Webpack, Babel, JWT, Jenkins, Jira, Trello, Bitbucket, Zoho Desk, Firecrawl, Getstream.io, Mailerlite, and Weweb, I focus on streamlining
+                        development and deployment processes. Currently pursuing a
+                        B.Sc. in Computer Science and Engineering at City
+                        University, Bangladesh, I'm committed to advancing my
+                        expertise in full-stack development.
+                      </Typography>
+                      <Box
+                        sx={{
+                          display: matches && "flex",
+                          alignItems: matches && "center",
+                          justifyContent: matches && "center",
+                          mb: 2,
+                          mt: 1,
+                        }}
+                      >
+                        <a href={Yeasaleh_Resume} download="yeasaleh_resume.pdf">
+                          <Button
+                            style={{ color: "white", background: "#00CF5D" }}
                             sx={{
-                              backgroundColor: "#1D293A",
-                              p: 0.6,
-                              borderRadius: "2px",
+                              '&:hover': {
+                                backgroundColor: '#00B84A',
+                                transform: 'translateY(-2px)',
+                                boxShadow: '0 5px 15px rgba(0,207,93,0.3)'
+                              },
+                              transition: 'all 0.3s ease'
                             }}
                           >
-                            <Typography
-                              sx={{
-                                color: "whitesmoke",
-                                fontSize: matches ? "12px" : "18px",
-                                textAlign: !matches && "center",
-                                fontWeight: "bold",
-                              }}
-                            >
-                              ABOUT ME
-                            </Typography>
-                          </Box>
-                          <Box>
-                            <hr style={{ width: "40px" }} />
-                          </Box>
-                        </Box>
+                            Resume
+                          </Button>
+                        </a>
                       </Box>
-                    )}
-                  </Box>
+                    </Box>
+                  </Grid>
+                  <Grid item xs={12} md={5} order={matches ? 1 : 2}>
+                    <Box
+                      sx={{ 
+                        display: "flex", 
+                        justifyContent: "center",
+                        alignItems: "center"
+                      }}
+                    >
+                      <Box sx={{ 
+                        p: 1,
+                        display: "flex",
+                        justifyContent: "center",
+                        width: "100%"
+                      }}>
+                        <img
+                          style={{
+                            width: matches ? "280px" : "310px",
+                            height: matches ? "280px" : "310px",
+                            borderRadius: "12px",
+                            border: "3px solid #2A3747",
+                            boxShadow: "0 10px 30px rgba(0,0,0,0.3)"
+                          }}
+                          src={yeasaleh}
+                          alt="saleh"
+                        />
+                      </Box>
+                    </Box>
+                  </Grid>
                 </Grid>
-              </Grid>
             </Box>
           </section>
         </Container>
